@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8" />
@@ -32,37 +32,36 @@
           <div class="collapse navbar-collapse" id="mainNavigation">
             <ul class="navbar-nav ml-auto">
               <li class="nav__item">
-                <a href="index.html" class="nav__item-link">Inicio</a>
+                <a href="index.html" class="nav__item-link" data-i18n="nav.home">Inicio</a>
               </li>
               <li class="nav__item">
-                <a href="nosotros.html" class="nav__item-link">Nosotros</a>
+                <a href="nosotros.html" class="nav__item-link" data-i18n="nav.about">Nosotros</a>
               </li>
               <li class="nav__item">
-                <a href="linea-ignifuga.html" class="nav__item-link">línea Ignífuga</a>
+                <a href="linea-ignifuga.html" class="nav__item-link" data-i18n="nav.flame">línea Ignífuga</a>
               </li>
               <li class="nav__item">
-                <a href="catalogo.html" class="nav__item-link">Catálogo</a>
+                <a href="catalogo.html" class="nav__item-link" data-i18n="nav.catalog">Catálogo</a>
               </li>
               <li class="nav__item">
-                <a href="politicas-empresariales.html" class="nav__item-link">Políticas</a>
+                <a href="politicas-empresariales.html" class="nav__item-link" data-i18n="nav.policies">Políticas</a>
               </li>
               <li class="nav__item">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc7VdPHzuYxkZn1uTfcETGRPsJvXok1tpWJzd7cWhtbZiFIrA/viewform"
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfFGwjCG1T_JQYt4kFtrGWhm8Ot8-St2_dMyABzKSEfCnntng/viewform"
                   class="nav__item-link" target="_blank">PQRS</a>
               </li>
               <li class="nav__item">
-                <a href="contacto.html" class="nav__item-link">Contacto</a>
+                <a href="contacto.html" class="nav__item-link" data-i18n="nav.contact">Contacto</a>
               </li>
             </ul><!-- /.navbar-nav -->
           </div><!-- /.navbar-collapse -->
           <div class="navbar-modules">
             <ul class="list-unstyled d-flex align-items-center modules__btns-list">
-              <li class="d-none d-lg-block">
-                  <a href="https://wa.me/573176385224" class="btn btn__primary module__btn-request" target="_blank">
-                  <span>Whatsapp</span>
-                  <i class="icon-arrow-right2"></i>
-                </a>
+              <li class="lang-switcher">
+                <button class="btn-lang" id="langBtnEn" onclick="setLang('en')">EN</button>
+                <button class="btn-lang" id="langBtnEs" onclick="setLang('es')">ES</button>
               </li>
+              
             </ul><!-- /.modules-wrapper -->
           </div><!-- /.navbar-modules -->
         </div><!-- /.container -->
@@ -70,19 +69,19 @@
     </header><!-- /.Header -->
 
     <!-- ========================
-       page title 
+       page title
     =========================== -->
     <section id="pageTitle" class="page-title bg-overlay bg-parallax">
       <div class="bg-img"><img src="assets/images/page-titles/2.png" alt="background"></div>
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-12 col-xl-8">
-            <span class="pagetitle__subheading">Calidad, confianza e innovación</span>
-            <h1 class="pagetitle__heading">Sobre Nosotros</h1>
+            <span class="pagetitle__subheading" data-i18n="nosotros.page.sub">Calidad, confianza e innovación</span>
+            <h1 class="pagetitle__heading" data-i18n="nosotros.page.heading">Ignisafe 10, marca desarrollada por Decimo Dotaciones</h1>
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Sobre Nosotros</li>
+                <li class="breadcrumb-item"><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page" data-i18n="nosotros.page.crumb">Sobre Nosotros</li>
               </ol>
             </nav>
           </div><!-- /.col-xl-8 -->
@@ -98,17 +97,16 @@
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-12 col-xl-9 offset-xl-1 ">
             <div class="heading heading-3 mb-50">
-              <span class="heading__subtitle">Fabricamos prendas y equipos de protección con calidad, cumplimiento y
-                mejora continua.</span>
-              <h2 class="heading__title">Comprometidos con la excelencia</h2>
+              <span class="heading__subtitle" data-i18n="nosotros.about.sub">Empresa colombiana con experiencia en la producción de prendas técnicas.</span>
+              <h2 class="heading__title" data-i18n="nosotros.about.title">Comprometidos con la excelencia</h2>
             </div><!-- /heading -->
           </div><!-- /.col-lg-9 -->
         </div><!-- /.row -->
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-4">
             <div class="about__text mt-30">
-              <p>POLÍTICAS DE CALIDAD</p>
-              <p>Nuestra compañía manufactura y comercializa elementos de protección, ropa ignífuga y resistente al arco
+              <p data-i18n="nosotros.about.pol">POLÍTICAS DE CALIDAD</p>
+              <p data-i18n="nosotros.about.text">Nuestra compañía manufactura y comercializa elementos de protección, ropa ignífuga y resistente al arco
                 eléctrico, asegurando el cumplimiento de los requisitos normativos y del cliente, siendo eficientes en
                 nuestros procesos, competitivos en el mercado local, regional e internacional; lo anterior en procura de
                 la mejora continua, la satisfacción de nuestros clientes y las partes interesadas.</p>
@@ -117,25 +115,22 @@
           <div class="col-sm-12 col-md-8 col-lg-5">
             <div class="about__img">
               <img src="assets/images/about/4.png" alt="about" class="img-fluid">
-              <a href="https://www.youtube.com/watch?v=_6B--K61w0I" class="btn btn__primary popup-video">
-                <i class="fa fa-play"></i><span>Ver Video!</span>
-              </a>
             </div><!-- /.about-img -->
           </div><!-- /.col-lg-5 -->
           <div class="col-sm-12 col-md-12 col-lg-3">
             <div class="features-list features-list-layout1 mt-30">
               <div class="feature-item feature-list-item">
                 <div class="feature__content">
-                  <h4 class="feature__title">VISIÓN</h4>
-                  <p class="feature__desc">Para el año 2034 seremos la compañía líder en el mercado local y a nivel
+                  <h4 class="feature__title" data-i18n="nosotros.vision.title">VISIÓN</h4>
+                  <p class="feature__desc" data-i18n="nosotros.vision.desc">Para el año 2034 seremos la compañía líder en el mercado local y a nivel
                     Latinoamérica de prendas de protección personal especializada, aplicando en nuestros procesos
                     tecnología de punta, con una operación sostenible, rentable y amigable con el medio ambiente.</p>
                 </div><!-- /.feature-content -->
               </div><!-- /.feature-item -->
               <div class="feature-item feature-list-item">
                 <div class="feature__content">
-                  <h4 class="feature__title">MISIÓN</h4>
-                  <p class="feature__desc">Fabricar prendas técnicas de protección personal, cumpliendo con altos
+                  <h4 class="feature__title" data-i18n="nosotros.mision.title">MISIÓN</h4>
+                  <p class="feature__desc" data-i18n="nosotros.mision.desc">Fabricar prendas técnicas de protección personal, cumpliendo con altos
                     estándares en: calidad, servicio y buenas prácticas, asegurando una operación sostenible y rentable,
                     aportando valor a todas las partes interesadas en la cadena productiva y comercial.</p>
                 </div><!-- /.feature-content -->
@@ -156,7 +151,7 @@
             <div class="bg-img"><img src="assets/images/backgrounds/2.jpg" alt="background"></div>
             <div class="heading heading-2 mb-50">
               <span class="heading__subtitle color-white">DÉCIMO DOTACIONES S.A.S.</span>
-              <h3 class="heading__title color-white">ASESORIA PERSONALIZADA</h3>
+              <h3 class="heading__title color-white" data-i18n="nosotros.banner.title">ASESORIA PERSONALIZADA</h3>
               <p class="heading__desc color-white">⮞ Carrera 64 # 48-92, Barrio La Pradera, Bogotá, Colombia</p>
               <p class="heading__desc color-white">⮞ Teléfono: (601) 4432180</p>
               <p class="heading__desc color-white">⮞ www.decimodotaciones.com</p>
@@ -172,7 +167,7 @@
                     <i class="icon-worldwide-pin"></i>
                   </div><!-- /.fancybox-icon -->
                   <div class="fancybox__content">
-                    <h4 class="fancybox__title">Contacto <br> Directo</h4>
+                    <h4 class="fancybox__title" data-i18n-html="nosotros.banner.fancy1">Contacto <br> Directo</h4>
                     <div class="divider__line divider__sm divider__white"></div>
                   </div><!-- /.fancybox-content -->
                 </div><!-- /.fancybox-item -->
@@ -184,7 +179,7 @@
                     <i class="icon-trolley-1"></i>
                   </div><!-- /.fancybox-icon -->
                   <div class="fancybox__content">
-                    <h4 class="fancybox__title">Entrega <br> Inmediata</h4>
+                    <h4 class="fancybox__title" data-i18n-html="nosotros.banner.fancy2">Entrega <br> Inmediata</h4>
                     <div class="divider__line divider__sm divider__white"></div>
                   </div><!-- /.fancybox-content -->
                 </div><!-- /.fancybox-item -->
@@ -196,7 +191,7 @@
                     <i class="icon-conveyor"></i>
                   </div><!-- /.fancybox-icon -->
                   <div class="fancybox__content">
-                    <h4 class="fancybox__title">Producto <br>Garantizado</h4>
+                    <h4 class="fancybox__title" data-i18n-html="nosotros.banner.fancy3">Producto <br>Garantizado</h4>
                     <div class="divider__line divider__sm divider__white"></div>
                   </div><!-- /.fancybox-content -->
                 </div><!-- /.fancybox-item -->
@@ -210,7 +205,7 @@
                 <div class="item">
                   <div class="counter-item counters-white">
                     <div class="counter__icon"><i class="icon-valve"></i></div>
-                    <p class="counter__desc">Fabricamos ropa ignífuga y elementos de protección con altos estándares de
+                    <p class="counter__desc" data-i18n="nosotros.banner.counter">Fabricamos ropa ignífuga y elementos de protección con altos estándares de
                       calidad y compromiso con nuestros clientes.</p>
                   </div><!-- /.counter-item -->
                 </div>
@@ -234,60 +229,54 @@
               <div class="footer__widget-content">
                 <img src="assets/images/logo/logo-footer.png" alt="logo">
                 <p>Carrera 64 # 4B-92, Barrio La Pradera, <br>Bogotá, Colombia</p>
-                <p>Correo: <a href="mailto:info@decimodotaciones.com">info@decimodotaciones.com</a></p>
+                <p><span data-i18n="footer.emailLabel">Correo:</span> <a href="mailto:info@decimodotaciones.com">info@decimodotaciones.com</a></p>
                 <p><a href="tel:002010612457410" class="font-weight-bold color-white">(601) 443 2180</a></p>
               </div>
             </div><!-- /.col-lg-4 -->
             <div class="col-6 col-sm-6 col-md-3 col-lg-2 footer__widget footer__widget-nav">
-              <h6 class="footer__widget-title">Web</h6>
+              <h6 class="footer__widget-title" data-i18n="footer.web">Web</h6>
               <div class="footer__widget-content">
                 <nav>
                   <ul class="list-unstyled">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="linea-ignifuga.html">Línea Ignífuga</a></li>
-                    <li><a href="catalogo.html">Catálogo</a></li>
-                    <li><a href="politicas-empresariales.html">Políticas</a></li>
-                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSc7VdPHzuYxkZn1uTfcETGRPsJvXok1tpWJzd7cWhtbZiFIrA/viewform" target="_blank">PQRS</a></li>                   
-                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+                    <li><a href="nosotros.html" data-i18n="nav.about">Nosotros</a></li>
+                    <li><a href="linea-ignifuga.html" data-i18n="nav.flame">Línea Ignífuga</a></li>
+                    <li><a href="catalogo.html" data-i18n="nav.catalog">Catálogo</a></li>
+                    <li><a href="politicas-empresariales.html" data-i18n="nav.policies">Políticas</a></li>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfFGwjCG1T_JQYt4kFtrGWhm8Ot8-St2_dMyABzKSEfCnntng/viewform" target="_blank">PQRS</a></li>
+                    <li><a href="contacto.html" data-i18n="nav.contact">Contacto</a></li>
                   </ul>
                 </nav>
               </div><!-- /.footer-widget-content -->
             </div><!-- /.col-lg-2 -->
             <div class="col-6 col-sm-6 col-md-3 col-lg-2 footer__widget footer__widget-nav">
-              <h6 class="footer__widget-title">Empresa</h6>
+              <h6 class="footer__widget-title" data-i18n="footer.company">Empresa</h6>
               <div class="footer__widget-content">
                 <nav>
                   <ul class="list-unstyled">
-                    <li>
-                      <p>(601) 443 2180</p>
-                    </li>
+                    <li><p>(601) 443 2180</p></li>
                     <li><p>( +57 ) 317 638 5224</p></li>
-                    <li>
-                      <p>Carrera 64 # 4B-92</p>
-                    </li>
-                    <li>
-                      <p>Bogotá, Colombia</p>
-                    </li>
+                    <li><p>Carrera 64 # 4B-92</p></li>
+                    <li><p>Bogotá, Colombia</p></li>
                   </ul>
                 </nav>
               </div><!-- /.footer-widget-content -->
             </div><!-- /.col-lg-2 -->
             <div class="col-12 col-sm-12 col-md-6 col-lg-4 footer__widget footer__widget-newsletter">
               <div class="footer__widget-content">
-                <h6 class="footer__widget-title">Informes</h6>
-                <p>Regístrese para recibir alertas de la industria, nuestras últimas noticias, pensamientos y
+                <h6 class="footer__widget-title" data-i18n="footer.reports">Informes</h6>
+                <p data-i18n="footer.newsletter.desc">Regístrese para recibir alertas de la industria, nuestras últimas noticias, pensamientos y
                   perspectivas.</p>
                 <form class="widget__newsletter-form">
                   <div class="form-group mb-0">
-                    <input type="text" class="form-control" placeholder="Tu Correo Electrónico ">
-                    <button type="submit" class="btn btn__primary btn__hover2">Suscribir</button>
+                    <input type="text" class="form-control" data-i18n-placeholder="footer.newsletter.email" placeholder="Tu Correo Electrónico ">
+                    <button type="submit" class="btn btn__primary btn__hover2" data-i18n="footer.newsletter.btn">Suscribir</button>
                   </div>
                 </form>
               </div><!-- /.footer-widget-content -->
               <div class="text-right mt-20">
-                <span class="footer__contact-link">¿Tienes alguna pregunta?
-                  <a href="contacto.html">Click aquí</a>
+                <span class="footer__contact-link"><span data-i18n="footer.question">¿Tienes alguna pregunta?</span>
+                  <a href="contacto.html" data-i18n="footer.clickHere">Click aquí</a>
                 </span>
               </div>
             </div><!-- /.col-lg-4 -->
@@ -306,8 +295,8 @@
                         &copy; 2025 DECIMO DOTACIONES - IGNISAFE <span class="color-theme"></span>
                       </a>
                     </li>
-                    <li><a href="politicas-empresariales.html">Términos y condiciones </a></li>
-                    <li><a href="politicas-empresariales.html">Política de privacidad</a></li>
+                    <li><a href="politicas-empresariales.html" data-i18n="footer.terms">Términos y condiciones </a></li>
+                    <li><a href="politicas-empresariales.html" data-i18n="footer.privacy">Política de privacidad</a></li>
                   </ul>
                 </nav>
 
@@ -331,10 +320,20 @@
         <button class="module__search-btn"><i class="fa fa-search"></i></button>
       </form>
     </div><!-- /.module-search-container -->
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/573176385224" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contáctanos por WhatsApp">
+      <div class="whatsapp-float__btn">
+        <i class="fa fa-whatsapp"></i>
+      </div>
+      <span class="whatsapp-float__label">¡Escríbenos!</span>
+    </a>
+
   </div><!-- /.wrapper -->
 
   <script src="assets/js/jquery-3.3.1.min.js"></script>
   <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/i18n.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 

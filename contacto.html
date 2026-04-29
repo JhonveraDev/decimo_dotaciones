@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8" />
@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta name="description" content="Industic - Factory and Manufacturing Html Template">
   <link href="assets/images/favicon/favicon.png" rel="icon">
-  <title>Industic - Contacto</title>
+  <title>Décimo Dotaciones - Contacto</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700%7cRubik:400,500,700&display=swap">
   <link rel="stylesheet" href="assets/css/libraries.css">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -31,35 +31,33 @@
           <div class="collapse navbar-collapse" id="mainNavigation">
             <ul class="navbar-nav ml-auto">
               <li class="nav__item">
-                <a href="index.html" class="nav__item-link">Inicio</a>
+                <a href="index.html" class="nav__item-link" data-i18n="nav.home">Inicio</a>
               </li>
               <li class="nav__item">
-                <a href="nosotros.html" class="nav__item-link">Nosotros</a>
+                <a href="nosotros.html" class="nav__item-link" data-i18n="nav.about">Nosotros</a>
               </li>
               <li class="nav__item">
-                <a href="linea-ignifuga.html" class="nav__item-link">línea Ignífuga</a>
+                <a href="linea-ignifuga.html" class="nav__item-link" data-i18n="nav.flame">línea Ignífuga</a>
               </li>
               <li class="nav__item">
-                <a href="catalogo.html" class="nav__item-link">Catálogo</a>
+                <a href="catalogo.html" class="nav__item-link" data-i18n="nav.catalog">Catálogo</a>
               </li>
               <li class="nav__item">
-                <a href="politicas-empresariales.html" class="nav__item-link">Políticas</a>
+                <a href="politicas-empresariales.html" class="nav__item-link" data-i18n="nav.policies">Políticas</a>
               </li>
               <li class="nav__item">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc7VdPHzuYxkZn1uTfcETGRPsJvXok1tpWJzd7cWhtbZiFIrA/viewform" class="nav__item-link" target="_blank">PQRS</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfFGwjCG1T_JQYt4kFtrGWhm8Ot8-St2_dMyABzKSEfCnntng/viewform" class="nav__item-link" target="_blank">PQRS</a>
               </li>
               <li class="nav__item">
-                <a href="contacto.html" class="nav__item-link">Contacto</a>
+                <a href="contacto.html" class="nav__item-link" data-i18n="nav.contact">Contacto</a>
               </li>
             </ul><!-- /.navbar-nav -->
           </div><!-- /.navbar-collapse -->
           <div class="navbar-modules">
             <ul class="list-unstyled d-flex align-items-center modules__btns-list">
-              <li class="d-none d-lg-block">
-                  <a href="https://wa.me/573176385224" class="btn btn__primary module__btn-request" target="_blank">
-                    <span>Whatsapp</span>
-                    <i class="icon-arrow-right2"></i>
-                  </a>
+              <li class="lang-switcher">
+                <button class="btn-lang" id="langBtnEn" onclick="setLang('en')">EN</button>
+                <button class="btn-lang" id="langBtnEs" onclick="setLang('es')">ES</button>
               </li>
             </ul><!-- /.modules-wrapper -->
           </div><!-- /.navbar-modules -->
@@ -68,18 +66,18 @@
     </header><!-- /.Header -->
 
     <!-- ========================
-       page title 
+       page title
     =========================== -->
     <section id="pageTitle" class="page-title page-title-layout3 bg-overlay bg-parallax text-center">
-      <div class="bg-img"><img src="assets/images/page-titles/4.png" alt="background"></div>
+      <div class="bg-img"><img src="assets/images/page-titles/fondosweb-02.jpg.jpeg" alt="background"></div>
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-8 offset-lg-2">
-            <h1 class="pagetitle__heading">CONTACTO</h1>
+            <h1 class="pagetitle__heading" data-i18n="cont.page.heading">CONTACTO</h1>
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb justify-content-center">
-                <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+                <li class="breadcrumb-item"><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page" data-i18n="cont.page.crumb">Contacto</li>
               </ol>
             </nav>
           </div><!-- /.col-lg-8 -->
@@ -88,7 +86,7 @@
     </section><!-- /.page-title -->
 
     <!-- ========================
-      Request Quote  2
+      Request Quote 2
     =========================== -->
     <section id="requestQuote" class="request-quote-2 pb-100 pt-100">
       <div class="container">
@@ -96,52 +94,52 @@
           <div class="col-sm-12 col-md-12 col-lg-12">
             <div class="request-quote-panel">
               <div class="request__panel-banner bg-overlay bg-overlay-theme">
-                <div class="bg-img"><img src="assets/images/banners/2.jpg" alt="banner"></div>
+                <div class="bg-img"><img src="assets/images/page-titles/fondosweb-02.jpg.jpeg" alt="banner"></div>
                 <div class="request__panel-banner-inner">
-                  <h5 class="request__panel-title">Soluciones efectivas, atención cercana</h5>
-                  <p class="request__panel-desc">Contamos con equipos de atención al cliente comprometidos y servicios ágiles diseñados para ofrecer soluciones efectivas.</p>
+                  <h5 class="request__panel-title" data-i18n="cont.panel.title">Soluciones efectivas, atención cercana</h5>
+                  <p class="request__panel-desc" data-i18n="cont.panel.desc">Contamos con equipos de atención al cliente comprometidos y servicios ágiles diseñados para ofrecer soluciones efectivas.</p>
                 </div><!-- /.request-panel-banner-inner -->
               </div><!-- /.request-panel-banner -->
               <div class="request__form mb-0">
                 <div class="request__form-body">
                   <div class="row">
                     <div class="col-sm-12 col-md-12 col-lg-12">
-                      <h4 class="request__form-title">ESCRÍBENOS</h4>
-                      <p class="request__form-desc">¿Tienes preguntas o comentarios? ¡Nos encantaría saber de ti! Completa nuestro formulario de contacto y te responderemos pronto.</p>
+                      <h4 class="request__form-title" data-i18n="cont.form.title">ESCRÍBENOS</h4>
+                      <p class="request__form-desc" data-i18n="cont.form.desc">¿Tienes preguntas o comentarios? ¡Nos encantaría saber de ti! Completa nuestro formulario de contacto y te responderemos pronto.</p>
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-6">
                       <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Nombre">
+                        <input type="text" class="form-control" data-i18n-placeholder="cont.ph.name" placeholder="Nombre">
                       </div>
                     </div><!-- /.col-lg-6 -->
                     <div class="col-sm-6 col-md-6 col-lg-6">
                       <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Correo Electrónico">
+                        <input type="email" class="form-control" data-i18n-placeholder="cont.ph.email" placeholder="Correo Electrónico">
                       </div>
                     </div><!-- /.col-lg-6 -->
                     <div class="col-sm-6 col-md-6 col-lg-6">
                       <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Teléfono">
+                        <input type="text" class="form-control" data-i18n-placeholder="cont.ph.phone" placeholder="Teléfono">
                       </div>
                     </div><!-- /.col-lg-6 -->
                     <div class="col-sm-6 col-md-6 col-lg-6">
                       <div class="form-group form-group-select">
                         <select class="form-control">
-                          <option>Seleciona tu petición</option>
-                          <option>Cotización</option>
-                          <option>Sugerencia</option>
-                          <option>Felicitación</option>
-                          <option>Reclamo</option>
+                          <option data-i18n="cont.sel.default">Seleciona tu petición</option>
+                          <option data-i18n="cont.sel.opt1">Cotización</option>
+                          <option data-i18n="cont.sel.opt2">Sugerencia</option>
+                          <option data-i18n="cont.sel.opt3">Felicitación</option>
+                          <option data-i18n="cont.sel.opt4">Reclamo</option>
                         </select>
                       </div>
                     </div><!-- /.col-lg-6 -->
                     <div class="col-sm-12 col-md-12 col-lg-12">
                       <div class="form-group">
-                        <textarea class="form-control" placeholder="Detalles"></textarea>
+                        <textarea class="form-control" data-i18n-placeholder="cont.ph.details" placeholder="Detalles"></textarea>
                       </div>
                     </div><!-- /.col-lg-6 -->
                     <div class="col-sm-12 col-md-12 col-lg-12">
-                      <button class="btn btn__secondary">Enviar</button>
+                      <button class="btn btn__secondary" data-i18n="cont.form.send">Enviar</button>
                     </div><!-- /.col-lg-12 -->
                   </div>
                 </div><!-- /.request-form-body -->
@@ -151,7 +149,7 @@
         </div><!-- /.row -->
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-12 text-center mt-40">
-            <p class="text__link mb-0">Nos pondremos en contacto con usted en un plazo de 24 horas o llámenos.
+            <p class="text__link mb-0"><span data-i18n="cont.info">Nos pondremos en contacto con usted en un plazo de 24 horas o llámenos.</span>
               <span class="font-bold color-theme">( +57 ) 317 638 5224</span>
             </p>
           </div><!-- /.col-lg-12 -->
@@ -170,28 +168,28 @@
               <div class="footer__widget-content">
                 <img src="assets/images/logo/logo-footer.png" alt="logo">
                 <p>Carrera 64 # 4B-92, Barrio La Pradera, <br>Bogotá, Colombia</p>
-                <p>Correo: <a href="mailto:info@decimodotaciones.com">info@decimodotaciones.com</a></p>
+                <p><span data-i18n="footer.emailLabel">Correo:</span> <a href="mailto:info@decimodotaciones.com">info@decimodotaciones.com</a></p>
                 <p><a href="tel:002010612457410" class="font-weight-bold color-white">(601) 443 2180</a></p>
               </div>
             </div><!-- /.col-lg-4 -->
             <div class="col-6 col-sm-6 col-md-3 col-lg-2 footer__widget footer__widget-nav">
-              <h6 class="footer__widget-title">Web</h6>
+              <h6 class="footer__widget-title" data-i18n="footer.web">Web</h6>
               <div class="footer__widget-content">
                 <nav>
                   <ul class="list-unstyled">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="linea-ignifuga.html">Línea Ignífuga</a></li>
-                    <li><a href="catalogo.html">Catálogo</a></li>
-                    <li><a href="politicas-empresariales.html">Políticas</a></li>
-                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSc7VdPHzuYxkZn1uTfcETGRPsJvXok1tpWJzd7cWhtbZiFIrA/viewform" target="_blank">PQRS</a></li>                   
-                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+                    <li><a href="nosotros.html" data-i18n="nav.about">Nosotros</a></li>
+                    <li><a href="linea-ignifuga.html" data-i18n="nav.flame">Línea Ignífuga</a></li>
+                    <li><a href="catalogo.html" data-i18n="nav.catalog">Catálogo</a></li>
+                    <li><a href="politicas-empresariales.html" data-i18n="nav.policies">Políticas</a></li>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfFGwjCG1T_JQYt4kFtrGWhm8Ot8-St2_dMyABzKSEfCnntng/viewform" target="_blank">PQRS</a></li>
+                    <li><a href="contacto.html" data-i18n="nav.contact">Contacto</a></li>
                   </ul>
                 </nav>
               </div><!-- /.footer-widget-content -->
             </div><!-- /.col-lg-2 -->
             <div class="col-6 col-sm-6 col-md-3 col-lg-2 footer__widget footer__widget-nav">
-              <h6 class="footer__widget-title">Empresa</h6>
+              <h6 class="footer__widget-title" data-i18n="footer.company">Empresa</h6>
               <div class="footer__widget-content">
                 <nav>
                   <ul class="list-unstyled">
@@ -205,18 +203,18 @@
             </div><!-- /.col-lg-2 -->
             <div class="col-12 col-sm-12 col-md-6 col-lg-4 footer__widget footer__widget-newsletter">
               <div class="footer__widget-content">
-                <h6 class="footer__widget-title">Informes</h6>
-                <p>Regístrese para recibir alertas de la industria, nuestras últimas noticias, pensamientos y perspectivas.</p>
+                <h6 class="footer__widget-title" data-i18n="footer.reports">Informes</h6>
+                <p data-i18n="footer.newsletter.desc">Regístrese para recibir alertas de la industria, nuestras últimas noticias, pensamientos y perspectivas.</p>
                 <form class="widget__newsletter-form">
                   <div class="form-group mb-0">
-                    <input type="text" class="form-control" placeholder="Tu Correo Electrónico ">
-                    <button type="submit" class="btn btn__primary btn__hover2">Suscribir</button>
+                    <input type="text" class="form-control" data-i18n-placeholder="footer.newsletter.email" placeholder="Tu Correo Electrónico ">
+                    <button type="submit" class="btn btn__primary btn__hover2" data-i18n="footer.newsletter.btn">Suscribir</button>
                   </div>
                 </form>
               </div><!-- /.footer-widget-content -->
               <div class="text-right mt-20">
-                <span class="footer__contact-link">¿Tienes alguna pregunta?
-                  <a href="contacto.html">Click aquí</a>
+                <span class="footer__contact-link"><span data-i18n="footer.question">¿Tienes alguna pregunta?</span>
+                  <a href="contacto.html" data-i18n="footer.clickHere">Click aquí</a>
                 </span>
               </div>
             </div><!-- /.col-lg-4 -->
@@ -235,8 +233,8 @@
                         &copy; 2025 DECIMO DOTACIONES - IGNISAFE <span class="color-theme"></span>
                       </a>
                     </li>
-                    <li><a href="politicas-empresariales.html">Términos y condiciones </a></li>
-                    <li><a href="politicas-empresariales.html">Política de privacidad</a></li>
+                    <li><a href="politicas-empresariales.html" data-i18n="footer.terms">Términos y condiciones </a></li>
+                    <li><a href="politicas-empresariales.html" data-i18n="footer.privacy">Política de privacidad</a></li>
                   </ul>
                 </nav>
 
@@ -261,10 +259,19 @@
       </form>
     </div><!-- /.module-search-container -->
 
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/573176385224" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contáctanos por WhatsApp">
+      <div class="whatsapp-float__btn">
+        <i class="fa fa-whatsapp"></i>
+      </div>
+      <span class="whatsapp-float__label">¡Escríbenos!</span>
+    </a>
+
   </div><!-- /.wrapper -->
 
   <script src="assets/js/jquery-3.3.1.min.js"></script>
   <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/i18n.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 

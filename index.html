@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8" />
@@ -32,37 +32,35 @@
           <div class="collapse navbar-collapse" id="mainNavigation">
             <ul class="navbar-nav ml-auto">
               <li class="nav__item">
-                <a href="index.html" class="nav__item-link">Inicio</a>
+                <a href="index.html" class="nav__item-link" data-i18n="nav.home">Inicio</a>
               </li>
               <li class="nav__item">
-                <a href="nosotros.html" class="nav__item-link">Nosotros</a>
+                <a href="nosotros.html" class="nav__item-link" data-i18n="nav.about">Nosotros</a>
               </li>
               <li class="nav__item">
-                <a href="linea-ignifuga.html" class="nav__item-link">línea Ignífuga</a>
+                <a href="linea-ignifuga.html" class="nav__item-link" data-i18n="nav.flame">línea Ignífuga</a>
               </li>
               <li class="nav__item">
-                <a href="catalogo.html" class="nav__item-link">Catálogo</a>
+                <a href="catalogo.html" class="nav__item-link" data-i18n="nav.catalog">Catálogo</a>
               </li>
               <li class="nav__item">
-                <a href="politicas-empresariales.html" class="nav__item-link">Políticas</a>
+                <a href="politicas-empresariales.html" class="nav__item-link" data-i18n="nav.policies">Políticas</a>
               </li>
               <li class="nav__item">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc7VdPHzuYxkZn1uTfcETGRPsJvXok1tpWJzd7cWhtbZiFIrA/viewform"
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfFGwjCG1T_JQYt4kFtrGWhm8Ot8-St2_dMyABzKSEfCnntng/viewform"
                   class="nav__item-link" target="_blank">PQRS</a>
               </li>
               <li class="nav__item">
-                <a href="contacto.html" class="nav__item-link">Contacto</a>
+                <a href="contacto.html" class="nav__item-link" data-i18n="nav.contact">Contacto</a>
               </li>
             </ul><!-- /.navbar-nav -->
           </div><!-- /.navbar-collapse -->
           <div class="navbar-modules">
             <ul class="list-unstyled d-flex align-items-center modules__btns-list">
-              <li class="d-none d-lg-block">
-                <a href="https://wa.me/573176385224" class="btn btn__primary module__btn-request" target="_blank">
-                  <span>Whatsapp</span>
-                  <i class="icon-arrow-right2"></i>
-                </a>
-              </li>
+              <li class="lang-switcher">
+                <button class="btn-lang" id="langBtnEn" onclick="setLang('en')">EN</button>
+                <button class="btn-lang" id="langBtnEs" onclick="setLang('es')">ES</button>
+              </li>  
             </ul><!-- /.modules-wrapper -->
           </div><!-- /.navbar-modules -->
         </div><!-- /.container -->
@@ -77,23 +75,22 @@
         data-autoplay="true" data-nav="true" data-dots="false" data-space="0" data-loop="true" data-speed="3000"
         data-transition="fade" data-animate-out="fadeOut" data-animate-in="fadeIn">
         <div class="slide-item align-v-h bg-overlay">
-          <div class="bg-img"><img src="assets/images/sliders/1.png" alt="slide img"></div>
+          <div class="bg-img"><img src="assets/images/page-titles/fondosweb-02.jpg.jpeg" alt="slide img"></div>
           <div class="container">
             <div class="row">
               <div class="col-sm-12 col-md-12 col-lg-8 col-xl-5">
                 <div class="slide__content">
-                  <img src="assets/images/logo/ignisafe-logos.png" style="width: 48%; margin-bottom: 20px;" alt="">
-                  <h2 class="slide__title" style="font-size:80px; line-height: 75px;">Soluciones industriales!</h2>
-                  <p class="slide__desc">IGNISAFE ofrece prendas ignífugas que cumplen normas internacionales y protegen
-                    del fuego y descargas eléctricas.</p>
-                  <a href="catalogo.html" class="btn btn__white mr-40">Catálogo</a>
-                  <a class="btn btn__video popup-video" href="https://www.youtube.com/watch?v=_6B--K61w0I">
-                    <div class="video__player">
-                      <span class="video__player-animation"></span>
-                      <span class="video__player-animation video__player-animation-2"></span>
-                      <span class="video__player-animation video__player-animation-3"></span>
-                      <i class="fa fa-play"></i>
-                    </div>
+                  <h2 class="slide__title" style="font-size:40px; line-height: 40px;" data-i18n="index.slide1.title">
+                    Prendas de protección contra fuego repentino y arco eléctrico</h2>
+                  <p class="slide__desc" data-i18n="index.slide1.desc">En Ignisafe 10 diseñamos y producimos ropa de protección industrial especializada para ambientes con riesgo térmico y eléctrico.</p>
+                  <a href="catalogo.html" class="btn btn__white mr-40" data-i18n="index.slide1.catalog">Ver Catálogo</a>
+                  <a href="linea-ignifuga.html" class="btn btn__white mr-40" data-i18n="">línea Ignisafe 10</a>
+                  <div class="video__player">
+                    <span class="video__player-animation"></span>
+                    <span class="video__player-animation video__player-animation-2"></span>
+                    <span class="video__player-animation video__player-animation-3"></span>
+                    <i class="fa fa-play"></i>
+                  </div>
                   </a>
                 </div><!-- /.slide-content -->
               </div><!-- /.col-xl-5 -->
@@ -102,11 +99,12 @@
                   <div class="slider__panel-icon">
                     <i class="icon-manufacturing-plant"></i>
                   </div>
-                  <h3 class="slider__panel-title">Calidad</h3>
-                  <p class="slider__panel-desc">Certificados bajo normas internacionales.
+                  <h3 class="slider__panel-title" data-i18n="index.slide1.panel.title">Calidad</h3>
+                  <p class="slider__panel-desc" data-i18n="index.slide1.panel.desc">Certificados bajo normas
+                    internacionales.
                   </p>
                   <a href="catalogo.html" class="btn btn__primary btn__link">
-                    <span>Ver Productos</span>
+                    <span data-i18n="index.slide1.panel.btn">Ver Productos</span>
                     <i class="icon-arrow-right2"></i>
                   </a>
                 </div><!-- /.slider-panel -->
@@ -115,24 +113,15 @@
           </div><!-- /.container -->
         </div><!-- /.slide-item -->
         <div class="slide-item align-v-h bg-overlay">
-          <div class="bg-img"><img src="assets/images/sliders/2.png" alt="slide img"></div>
+          <div class="bg-img"><img src="assets/images/sliders/2.jpeg" alt="slide img"></div>
           <div class="container">
             <div class="row">
               <div class="col-sm-12 col-md-12 col-lg-8 col-xl-5">
                 <div class="slide__content">
-                  <img src="assets/images/logo/ignisafe-logos.png" style="width: 48%; margin-bottom: 20px;" alt="">
-                  <h2 class="slide__title" style="font-size:80px; line-height: 75px;">Somos Expertos</h2>
-                  <p class="slide__desc">En DÉCIMO DOTACIONES, nuestra línea IGNISAFE 10 ofrece prendas especializadas
-                    para máxima protección contra llamas y chispas.</p>
-                  <a href="catalogo.html" class="btn btn__white mr-40">Catálogo</a>
-                  <a class="btn btn__video popup-video" href="https://www.youtube.com/watch?v=_6B--K61w0I">
-                    <div class="video__player">
-                      <span class="video__player-animation"></span>
-                      <span class="video__player-animation video__player-animation-2"></span>
-                      <span class="video__player-animation video__player-animation-3"></span>
-                      <i class="fa fa-play"></i>
-                    </div>
-                  </a>
+                  <h2 class="slide__title" style="font-size:40px; line-height: 40px;" data-i18n="index.slide2.title">
+                    Ignisafe 10, marca especializada en protección industrial</h2>
+                  <p class="slide__desc" data-i18n="index.slide2.desc">Décimo Dotaciones desarrolla, a través de Ignisafe 10, prendas de protección contra fuego repentino y arco eléctrico para sectores industriales de alta exigencia.(Prendas certificadas para entornos de alto riesgo, la combinación ideal entre confort y protección.)</p>
+                  <a href="catalogo.html" class="btn btn__white mr-40" data-i18n="index.slide2.catalog">Catálogo</a>
                 </div><!-- /.slide-content -->
               </div><!-- /.col-xl-5 -->
               <div class="col-sm-12 col-md-12 col-lg-4 col-xl-3 offset-xl-4">
@@ -140,11 +129,11 @@
                   <div class="slider__panel-icon">
                     <i class="icon-wheel"></i>
                   </div>
-                  <h3 class="slider__panel-title">Normativas</h3>
-                  <p class="slider__panel-desc">NFPA 2112, NFPA 2113 y ASTM F1506.
+                  <h3 class="slider__panel-title" data-i18n="index.slide2.panel.title">Normativas</h3>
+                  <p class="slider__panel-desc" data-i18n="index.slide2.panel.desc">NFPA 2112, NFPA 2113 y ASTM F1506.
                   </p>
                   <a href="nosotros.html" class="btn btn__primary btn__link">
-                    <span>Conocer Más</span>
+                    <span data-i18n="index.slide2.panel.btn">Conocer Más</span>
                     <i class="icon-arrow-right2"></i>
                   </a>
                 </div><!-- /.slider-panel -->
@@ -153,26 +142,16 @@
           </div><!-- /.container -->
         </div><!-- /.slide-item -->
         <div class="slide-item align-v-h bg-overlay">
-          <div class="bg-img"><img src="assets/images/sliders/3.png" alt="slide img"></div>
+          <div class="bg-img"><img src="assets/images/sliders/3.jpeg" alt="slide img"></div>
           <div class="container">
             <div class="row">
               <div class="col-sm-12 col-md-12 col-lg-8 col-xl-5">
                 <div class="slide__content">
-                  <img src="assets/images/logo/ignisafe-logos.png" style="width: 48%; margin-bottom: 20px;" alt="">
-                  <h2 class="slide__title" style="font-size:75px; line-height: 70px; text-transform: none;">Protección y
-                    Confianza</h2>
-                  <p class="slide__desc">En DÉCIMO DOTACIONES garantizamos protección y confianza con nuestras prendas
-                    ignífugas, diseñadas para ofrecer seguridad, resistencia y confort en los entornos más exigentes.
-                  </p>
-                  <a href="catalogo.html" class="btn btn__primary mr-40">Catálogo</a>
-                  <a class="btn btn__video popup-video" href="https://www.youtube.com/watch?v=_6B--K61w0I">
-                    <div class="video__player">
-                      <span class="video__player-animation"></span>
-                      <span class="video__player-animation video__player-animation-2"></span>
-                      <span class="video__player-animation video__player-animation-3"></span>
-                      <i class="fa fa-play"></i>
-                    </div>
-                  </a>
+                  <h2 class="slide__title" style="font-size:40px; line-height: 40px; text-transform: none;"
+                    data-i18n="index.slide3.title">Protección certificada, diseño especializado, calidad y confianza
+                  </h2>
+                  <p class="slide__desc" data-i18n="index.slide3.desc">Desarrollamos prendas de protección industrial con enfoque en seguridad, confort, durabilidad y cumplimiento para operaciones con riesgo térmico y eléctrico.</p>
+                  <a href="catalogo.html" class="btn btn__primary mr-40" data-i18n="index.slide3.catalog">Catálogo</a>
                 </div><!-- /.slide-content -->
               </div><!-- /.col-xl-5 -->
               <div class="col-sm-12 col-md-12 col-lg-4 col-xl-3 offset-xl-4">
@@ -180,10 +159,11 @@
                   <div class="slider__panel-icon">
                     <i class="icon-container"></i>
                   </div>
-                  <h3 class="slider__panel-title">Confort</h3>
-                  <p class="slider__panel-desc">Seguridad y comodidad en cada uso</p>
+                  <h3 class="slider__panel-title" data-i18n="index.slide3.panel.title">Confort</h3>
+                  <p class="slider__panel-desc" data-i18n="index.slide3.panel.desc">Seguridad y comodidad en cada uso
+                  </p>
                   <a href="catalogo.html" class="btn btn__primary btn__link">
-                    <span>Ver Productos</span>
+                    <span data-i18n="index.slide3.panel.btn">Ver Productos</span>
                     <i class="icon-arrow-right2"></i>
                   </a>
                 </div><!-- /.slider-panel -->
@@ -194,7 +174,7 @@
       </div><!-- /.carousel -->
     </section><!-- /.slider -->
 
-    <!-- =========================== 
+    <!-- ===========================
       Features Layout 2
     ============================= -->
     <section id="featuresLayout2" class="features features-Layout2 pt-0 pb-120">
@@ -203,36 +183,32 @@
           <!-- feature item #1 -->
           <div class="col-sm-12 col-md-6 col-lg-3 feature-item">
             <div class="feature__content">
-              <h4 class="feature__title">Protección certificada y garantizada</h4>
-              <p class="feature__desc">Nuestras prendas ignífugas cumplen con las normas internacionales, garantizando
-                seguridad ante fuego y descargas eléctricas.</p>
+              <h4 class="feature__title" data-i18n="index.feat1.title">Certificación y respaldo técnico</h4>
+              <p class="feature__desc" data-i18n="index.feat1.desc">Prendas desarrolladas con materiales y componentes certificados, según la referencia y el nivel de protección requerido.</p>
               <a href="catalogo.html" class="feature__link"> <i class="icon-arrow-right2"></i></a>
             </div><!-- /.feature-content -->
           </div><!-- /.col-lg-3 -->
           <!-- feature item #2 -->
           <div class="col-sm-12 col-md-6 col-lg-3 feature-item">
             <div class="feature__content">
-              <h4 class="feature__title">Innovación y calidad en cada prenda</h4>
-              <p class="feature__desc">Desarrollamos soluciones textiles con tecnología avanzada para ofrecer máximo
-                rendimiento y durabilidad.</p>
+              <h4 class="feature__title" data-i18n="index.feat2.title">Diseño y producción especializada</h4>
+              <p class="feature__desc" data-i18n="index.feat2.desc">Soluciones desarrolladas para sectores industriales que requieren desempeño, protección y confiabilidad.</p>
               <a href="catalogo.html" class="feature__link"> <i class="icon-arrow-right2"></i></a>
             </div><!-- /.feature-content -->
           </div><!-- /.col-lg-3 -->
           <!-- feature item #3 -->
           <div class="col-sm-12 col-md-6 col-lg-3 feature-item">
             <div class="feature__content">
-              <h4 class="feature__title">Comprometidos con la seguridad industrial</h4>
-              <p class="feature__desc">En DÉCIMO DOTACIONES priorizamos la protección del trabajador con productos
-                confiables y de alto estándar.</p>
+              <h4 class="feature__title" data-i18n="index.feat3.title">Calidad y cumplimiento</h4>
+              <p class="feature__desc" data-i18n="index.feat3.desc">Procesos orientados a entregar prendas con altos estándares de calidad, oportunidad y consistencia.</p>
               <a href="catalogo.html" class="feature__link"> <i class="icon-arrow-right2"></i></a>
             </div><!-- /.feature-content -->
           </div><!-- /.col-lg-3 -->
           <!-- feature item #4 -->
           <div class="col-sm-12 col-md-6 col-lg-3 feature-item">
             <div class="feature__content">
-              <h4 class="feature__title">IGNISAFE 10: confianza y resistencia comprobada</h4>
-              <p class="feature__desc">Nuestra línea líder en Colombia brinda protección efectiva, comodidad y
-                resistencia en cada jornada laboral.</p>
+              <h4 class="feature__title" data-i18n="index.feat4.title">Experiencia en sectores exigentes</h4>
+              <p class="feature__desc" data-i18n="index.feat4.desc">Acompañamos empresas que requieren protección frente a riesgos térmicos y eléctricos en sus operaciones. Esto aterriza exactamente tu intención de resaltar experiencia, diseño especializado, calidad y materiales/componentes certificados.</p>
               <a href="catalogo.html" class="feature__link"> <i class="icon-arrow-right2"></i></a>
             </div><!-- /.feature-content -->
           </div><!-- /.col-lg-3 -->
@@ -262,13 +238,16 @@
           </div><!-- /.col-lg-7 -->
           <div class="col-sm-12 col-md-12 col-lg-5">
             <div class="heading heading-2 mt-50">
-              <h2 class="heading__title">CONTAMOS CON CERTIFICACIONES DE CALIDAD ICONTEC</h2>
-              <p class="heading__desc">⮞ NFPA 2112:2023 Prendas resistentes a la llama</p>
-              <p class="heading__desc" style="margin-top: 4px;">⮞ ASTM F1506:2022 Resistentes a la llama y el arco
+              <h2 class="heading__title" data-i18n="index.about1.title">CONTAMOS CON CERTIFICACIONES DE CALIDAD ICONTEC
+              </h2>
+              <p class="heading__desc" data-i18n="index.about1.cert1">⮞ NFPA 2112:2023 Prendas resistentes a la llama
+              </p>
+              <p class="heading__desc" style="margin-top: 4px;" data-i18n="index.about1.cert2">⮞ ASTM F1506:2022
+                Resistentes a la llama y el arco
                 eléctrico</p>
-              <p class="heading__desc" style="margin-top: 4px;">⮞ SC – 2000823</p>
+              <p class="heading__desc" style="margin-top: 4px;" data-i18n="index.about1.cert3">⮞ SC – 2000823</p>
             </div><!-- /heading -->
-            <a href="nosotros.html" class="btn btn__default btn__bordered">Conocer Más</a>
+            <a href="nosotros.html" class="btn btn__default btn__bordered" data-i18n="index.about1.btn">Conocer Más</a>
           </div><!-- /.col-lg-5 -->
         </div><!-- /.row -->
       </div><!-- /.container -->
@@ -299,14 +278,15 @@
               <div class="blog__content">
                 <div class="blog__meta">
                   <div class="blog__meta-cat">
-                    <a href="nosotros.html">Calidad y compromiso colombiano</a>
+                    <a href="nosotros.html" data-i18n="index.blog1.cat">Calidad y compromiso colombiano</a>
                   </div><!-- /.blog-meta-cat -->
                 </div><!-- /.blog-meta -->
-                <h4 class="blog__title"><a href="nosotros.html">SOBRE NOSOTROS</a></h4>
-                <p class="blog__desc">Somos una empresa colombiana productora de prendas especializadas de protección
+                <h4 class="blog__title"><a href="nosotros.html" data-i18n="index.blog1.title">SOBRE NOSOTROS</a></h4>
+                <p class="blog__desc" data-i18n="index.blog1.desc">Somos una empresa colombiana productora de prendas
+                  especializadas de protección
                   personal, con altos estándares de calidad y servicio.</p>
                 <a href="nosotros.html" class="btn btn__secondary btn__link">
-                  <span>Ver Más</span>
+                  <span data-i18n="index.blog1.btn">Ver Más</span>
                   <i class="icon-arrow-right2"></i>
                 </a>
               </div><!-- /.entry-content -->
@@ -323,14 +303,15 @@
               <div class="blog__content">
                 <div class="blog__meta">
                   <div class="blog__meta-cat">
-                    <a href="catalogo.html">Ofertas del Mes en Protección y Vestuario</a>
+                    <a href="catalogo.html" data-i18n="index.blog2.cat">Ofertas del Mes en Protección y Vestuario</a>
                   </div><!-- /.blog-meta-cat -->
                 </div><!-- /.blog-meta -->
-                <h4 class="blog__title"><a href="catalogo.html">NUESTRO CATÁLOGO</a></h4>
-                <p class="blog__desc">Conoce nuestros productos del mes. Encuentra grandes descuentos para tus equipos
+                <h4 class="blog__title"><a href="catalogo.html" data-i18n="index.blog2.title">NUESTRO CATÁLOGO</a></h4>
+                <p class="blog__desc" data-i18n="index.blog2.desc">Conoce nuestros productos del mes. Encuentra grandes
+                  descuentos para tus equipos
                   de protección y vestuario.</p>
                 <a href="catalogo.html" class="btn btn__secondary btn__link">
-                  <span>Ver Más</span>
+                  <span data-i18n="index.blog2.btn">Ver Más</span>
                   <i class="icon-arrow-right2"></i>
                 </a>
               </div><!-- /.entry-content -->
@@ -347,14 +328,17 @@
               <div class="blog__content">
                 <div class="blog__meta">
                   <div class="blog__meta-cat">
-                    <a href="linea-ignifuga.html">Protección confiable frente al fuego y la electricidad</a>
+                    <a href="linea-ignifuga.html" data-i18n="index.blog3.cat">Protección confiable frente al fuego y la
+                      electricidad</a>
                   </div><!-- /.blog-meta-cat -->
                 </div><!-- /.blog-meta -->
-                <h4 class="blog__title"><a href="linea-ignifuga.html">LÍNEA IGNÍFUGA</a></h4>
-                <p class="blog__desc">Las prendas ignífugas protegen frente al fuego o descargas eléctricas durante
+                <h4 class="blog__title"><a href="linea-ignifuga.html" data-i18n="index.blog3.title">LÍNEA IGNÍFUGA</a>
+                </h4>
+                <p class="blog__desc" data-i18n="index.blog3.desc">Las prendas ignífugas protegen frente al fuego o
+                  descargas eléctricas durante
                   exposiciones breves, brindando seguridad.</p>
                 <a href="linea-ignifuga.html" class="btn btn__secondary btn__link">
-                  <span>Ver Más</span>
+                  <span data-i18n="index.blog3.btn">Ver Más</span>
                   <i class="icon-arrow-right2"></i>
                 </a>
               </div><!-- /.entry-content -->
@@ -372,18 +356,21 @@
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-12 col-xl-9 offset-xl-1 ">
             <div class="heading heading-3 mb-50">
-              <span class="heading__subtitle">Fabricamos productos de alta calidad</span>
-              <h2 class="heading__title">PROTECCIÓN IGNÍFUGA​</h2>
+              <span class="heading__subtitle" data-i18n="index.about2.subtitle">Fabricamos productos de alta
+                calidad</span>
+              <h2 class="heading__title" data-i18n="index.about2.title">PROTECCIÓN IGNÍFUGA​</h2>
             </div><!-- /heading -->
           </div><!-- /.col-lg-9 -->
         </div><!-- /.row -->
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-4">
             <div class="about__text mt-30">
-              <p>Las prendas con características ignífugas están diseñadas para proteger a una persona que está expuesta
+              <p data-i18n="index.about2.text1">Las prendas con características ignífugas están diseñadas para proteger
+                a una persona que está expuesta
                 directamente al fuego o a una descarga eléctrica durante un breve período de tiempo mientras se aleja
                 del peligro.</p>
-              <p>La exposición a llamas o chispas es una parte común de las tareas diarias de muchos trabajadores, y por
+              <p data-i18n="index.about2.text2">La exposición a llamas o chispas es una parte común de las tareas
+                diarias de muchos trabajadores, y por
                 ello, DÉCIMO DOTACIONES, con su línea IGNISAFE 10, es líder en el desarrollo de prendas de este tipo en
                 Colombia. Fabricamos productos de alta calidad que cumplen con todas las normas internacionales para
                 arcos eléctricos y fuego de corta duración, incluyendo las Normas NFPA 2112, NFPA 2113 y NFPA 70E.</p>
@@ -393,7 +380,6 @@
             <div class="about__img">
               <img src="assets/images/about/3.png" alt="about" class="img-fluid">
               <a href="https://www.youtube.com/watch?v=_6B--K61w0I" class="btn btn__primary popup-video">
-                <i class="fa fa-play"></i><span>Ver Video!</span>
               </a>
             </div><!-- /.about-img -->
           </div><!-- /.col-lg-5 -->
@@ -401,22 +387,25 @@
             <div class="features-list features-list-layout1 mt-30">
               <div class="feature-item feature-list-item">
                 <div class="feature__content">
-                  <h4 class="feature__title">Calidad</h4>
-                  <p class="feature__desc">Nuestras prendas ignífugas destacan por su calidad, resistencia y seguridad,
+                  <h4 class="feature__title" data-i18n="index.about2.qual.title">Calidad</h4>
+                  <p class="feature__desc" data-i18n="index.about2.qual.desc">Nuestras prendas ignífugas destacan por su
+                    calidad, resistencia y seguridad,
                     ideales para quienes enfrentan altas exigencias laborales.</p>
                 </div><!-- /.feature-content -->
               </div><!-- /.feature-item -->
               <div class="feature-item feature-list-item">
                 <div class="feature__content">
-                  <h4 class="feature__title">Fiabilidad</h4>
-                  <p class="feature__desc">Prendas ignífugas diseñadas para ofrecer fiabilidad y protección constante en
+                  <h4 class="feature__title" data-i18n="index.about2.rel.title">Fiabilidad</h4>
+                  <p class="feature__desc" data-i18n="index.about2.rel.desc">Prendas ignífugas diseñadas para ofrecer
+                    fiabilidad y protección constante en
                     los entornos más exigentes.</p>
                 </div><!-- /.feature-content -->
               </div><!-- /.feature-item -->
               <div class="feature-item feature-list-item">
                 <div class="feature__content">
-                  <h4 class="feature__title">Innovación</h4>
-                  <p class="feature__desc">> Incorporamos **innovación y tecnología** en cada prenda ignífuga para
+                  <h4 class="feature__title" data-i18n="index.about2.inn.title">Innovación</h4>
+                  <p class="feature__desc" data-i18n="index.about2.inn.desc">> Incorporamos **innovación y tecnología**
+                    en cada prenda ignífuga para
                     brindar mayor seguridad y comodidad al trabajador.</p>
                 </div><!-- /.feature-content -->
               </div><!-- /.feature-item -->
@@ -433,17 +422,19 @@
       <div class="container">
         <div class="row heading mb-40">
           <div class="col-sm-12 col-md-6 col-lg-6">
-            <span class="heading__subtitle">APRECIADOS ALIADOS COMERCIALES:</span>
-            <h2 class="heading__title">IMPLEMENTACIÓN DE SELLO DE NO DISCRIMINACIÓN​</h2>
+            <span class="heading__subtitle" data-i18n="index.serv.subtitle">APRECIADOS ALIADOS COMERCIALES:</span>
+            <h2 class="heading__title" data-i18n="index.serv.title">IMPLEMENTACIÓN DE SELLO DE NO DISCRIMINACIÓN​</h2>
           </div><!-- /.col-lg-6 -->
           <div class="col-sm-12 col-md-6 col-lg-6">
-            <p class="heading__desc">Nos complace compartir con ustedes que nuestra empresa DECIMO DOTACIONES S.A.S. ha
+            <p class="heading__desc" data-i18n="index.serv.desc1">Nos complace compartir con ustedes que nuestra empresa
+              DECIMO DOTACIONES S.A.S. ha
               gestionado y recibido con éxito el sello de no discriminación, distintivo otorgado por Icontec, lo que nos
               enorgullece y nos motiva a compartir, fortalecer y promover la inclusión y la lucha contra cualquier forma
               de discriminación dentro de la compañía y con las partes interesadas externas, como lo son nuestros
               Clientes y Proveedores.</p>
             <br>
-            <p class="heading__desc">Queremos aprovechar la oportunidad para invitarlos a cultivar las diferencias y
+            <p class="heading__desc" data-i18n="index.serv.desc2">Queremos aprovechar la oportunidad para invitarlos a
+              cultivar las diferencias y
               promover el respeto y la dignidad para todos es lo que nos permite avanzar como sociedad, de tal manera
               que la diversidad y la igualdad de oportunidades conducen a un mayor bienestar, crecimiento, desarrollo
               económico y competitividad.</p>
@@ -456,8 +447,9 @@
             <div class="service-item">
               <div class="service__content">
                 <div class="service__icon"><i class="icon-parcel"></i></div>
-                <h4 class="service__title">Comprometidos con la inclusión</h4>
-                <p class="service__desc">En DÉCIMO DOTACIONES promovemos un entorno donde todas las personas son
+                <h4 class="service__title" data-i18n="index.serv.item1.title">Comprometidos con la inclusión</h4>
+                <p class="service__desc" data-i18n="index.serv.item1.desc">En DÉCIMO DOTACIONES promovemos un entorno
+                  donde todas las personas son
                   valoradas y respetadas, sin distinción alguna.</p>
               </div><!-- /.service-content -->
               <div class="service__img">
@@ -469,8 +461,9 @@
             <div class="service-item">
               <div class="service__content">
                 <div class="service__icon"><i class="icon-gears"></i></div>
-                <h4 class="service__title">Diversidad que impulsa</h4>
-                <p class="service__desc">Creemos que la diversidad fortalece nuestra cultura organizacional y contribuye
+                <h4 class="service__title" data-i18n="index.serv.item2.title">Diversidad que impulsa</h4>
+                <p class="service__desc" data-i18n="index.serv.item2.desc">Creemos que la diversidad fortalece nuestra
+                  cultura organizacional y contribuye
                   al desarrollo y la competitividad.</p>
               </div><!-- /.service-content -->
               <div class="service__img">
@@ -482,8 +475,9 @@
             <div class="service-item">
               <div class="service__content">
                 <div class="service__icon"><i class="icon-eco"></i></div>
-                <h4 class="service__title">Espacios seguros y respetuosos</h4>
-                <p class="service__desc">Implementamos políticas que garantizan un ambiente libre de discriminación,
+                <h4 class="service__title" data-i18n="index.serv.item3.title">Espacios seguros y respetuosos</h4>
+                <p class="service__desc" data-i18n="index.serv.item3.desc">Implementamos políticas que garantizan un
+                  ambiente libre de discriminación,
                   violencia o acoso, promoviendo el bienestar.</p>
               </div><!-- /.service-content -->
               <div class="service__img">
@@ -504,10 +498,13 @@
           <div class="col-sm-12 col-md-12 col-lg-6 inner-padding  bg-overlay bg-overlay-theme bg-parallax">
             <div class="bg-img"><img src="assets/images/backgrounds/2.jpg" alt="background"></div>
             <div class="heading heading-2 mb-50">
-              <span class="heading__subtitle color-white">Promovemos políticas inclusivas que garantizan ambientes
+              <span class="heading__subtitle color-white" data-i18n="index.banner2.subtitle">Promovemos políticas
+                inclusivas que garantizan ambientes
                 laborales libres de discriminación y acoso.</span>
-              <h3 class="heading__title color-white">Compromiso con la Igualdad y el Respeto</h3>
-              <p class="heading__desc color-white">Promover y respetar los derechos de las personas y desarrollar
+              <h3 class="heading__title color-white" data-i18n="index.banner2.title">Compromiso con la Igualdad y el
+                Respeto</h3>
+              <p class="heading__desc color-white" data-i18n="index.banner2.desc">Promover y respetar los derechos de
+                las personas y desarrollar
                 políticas y prácticas que protegen a las personas de la discriminación, la violencia o el acoso de
                 cualquier tipo, sigue siendo una obligación fundamental. Todas ellas se incorporan a nuestra selección,
                 formación, promoción, procesos de desarrollo y remuneración. Lo invitamos a que si por algún caso usted
@@ -524,7 +521,7 @@
                     <i class="icon-flag"></i>
                   </div><!-- /.fancybox-icon -->
                   <div class="fancybox__content">
-                    <h4 class="fancybox__title">Igualdad <br> Respeto</h4>
+                    <h4 class="fancybox__title" data-i18n-html="index.banner2.fancy1">Igualdad <br> Respeto</h4>
                     <div class="divider__line divider__sm divider__white"></div>
                   </div><!-- /.fancybox-content -->
                 </div><!-- /.fancybox-item -->
@@ -536,7 +533,7 @@
                     <i class="icon-gears-1"></i>
                   </div><!-- /.fancybox-icon -->
                   <div class="fancybox__content">
-                    <h4 class="fancybox__title">Compromiso <br> Humano</h4>
+                    <h4 class="fancybox__title" data-i18n-html="index.banner2.fancy2">Compromiso <br> Humano</h4>
                     <div class="divider__line divider__sm divider__white"></div>
                   </div><!-- /.fancybox-content -->
                 </div><!-- /.fancybox-item -->
@@ -548,7 +545,7 @@
                     <i class="icon-management"></i>
                   </div><!-- /.fancybox-icon -->
                   <div class="fancybox__content">
-                    <h4 class="fancybox__title">Cultura <br> Inclusiva</h4>
+                    <h4 class="fancybox__title" data-i18n-html="index.banner2.fancy3">Cultura <br> Inclusiva</h4>
                     <div class="divider__line divider__sm divider__white"></div>
                   </div><!-- /.fancybox-content -->
                 </div><!-- /.fancybox-item -->
@@ -575,30 +572,31 @@
               <div class="footer__widget-content">
                 <img src="assets/images/logo/logo-footer.png" alt="logo">
                 <p>Carrera 64 # 4B-92, Barrio La Pradera, <br>Bogotá, Colombia</p>
-                <p>Correo: <a href="mailto:info@decimodotaciones.com">info@decimodotaciones.com</a></p>
+                <p><span data-i18n="footer.emailLabel">Correo:</span> <a
+                    href="mailto:info@decimodotaciones.com">info@decimodotaciones.com</a></p>
                 <p><a href="tel:002010612457410" class="font-weight-bold color-white">(601) 443 2180</a></p>
               </div>
             </div><!-- /.col-lg-4 -->
             <div class="col-6 col-sm-6 col-md-3 col-lg-2 footer__widget footer__widget-nav">
-              <h6 class="footer__widget-title">Web</h6>
+              <h6 class="footer__widget-title" data-i18n="footer.web">Web</h6>
               <div class="footer__widget-content">
                 <nav>
                   <ul class="list-unstyled">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="linea-ignifuga.html">Línea Ignífuga</a></li>
-                    <li><a href="catalogo.html">Catálogo</a></li>
-                    <li><a href="politicas-empresariales.html">Políticas</a></li>
+                    <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+                    <li><a href="nosotros.html" data-i18n="nav.about">Nosotros</a></li>
+                    <li><a href="linea-ignifuga.html" data-i18n="nav.flame">Línea Ignífuga</a></li>
+                    <li><a href="catalogo.html" data-i18n="nav.catalog">Catálogo</a></li>
+                    <li><a href="politicas-empresariales.html" data-i18n="nav.policies">Políticas</a></li>
                     <li><a
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSc7VdPHzuYxkZn1uTfcETGRPsJvXok1tpWJzd7cWhtbZiFIrA/viewform"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSfFGwjCG1T_JQYt4kFtrGWhm8Ot8-St2_dMyABzKSEfCnntng/viewform"
                         target="_blank">PQRS</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="contacto.html" data-i18n="nav.contact">Contacto</a></li>
                   </ul>
                 </nav>
               </div><!-- /.footer-widget-content -->
             </div><!-- /.col-lg-2 -->
             <div class="col-6 col-sm-6 col-md-3 col-lg-2 footer__widget footer__widget-nav">
-              <h6 class="footer__widget-title">Empresa</h6>
+              <h6 class="footer__widget-title" data-i18n="footer.company">Empresa</h6>
               <div class="footer__widget-content">
                 <nav>
                   <ul class="list-unstyled">
@@ -620,19 +618,22 @@
             </div><!-- /.col-lg-2 -->
             <div class="col-12 col-sm-12 col-md-6 col-lg-4 footer__widget footer__widget-newsletter">
               <div class="footer__widget-content">
-                <h6 class="footer__widget-title">Informes</h6>
-                <p>Regístrese para recibir alertas de la industria, nuestras últimas noticias, pensamientos y
+                <h6 class="footer__widget-title" data-i18n="footer.reports">Informes</h6>
+                <p data-i18n="footer.newsletter.desc">Regístrese para recibir alertas de la industria, nuestras últimas
+                  noticias, pensamientos y
                   perspectivas.</p>
                 <form class="widget__newsletter-form">
                   <div class="form-group mb-0">
-                    <input type="text" class="form-control" placeholder="Tu Correo Electrónico ">
-                    <button type="submit" class="btn btn__primary btn__hover2">Suscribir</button>
+                    <input type="text" class="form-control" data-i18n-placeholder="footer.newsletter.email"
+                      placeholder="Tu Correo Electrónico ">
+                    <button type="submit" class="btn btn__primary btn__hover2"
+                      data-i18n="footer.newsletter.btn">Suscribir</button>
                   </div>
                 </form>
               </div><!-- /.footer-widget-content -->
               <div class="text-right mt-20">
-                <span class="footer__contact-link">¿Tienes alguna pregunta?
-                  <a href="contacto.html">Click aquí</a>
+                <span class="footer__contact-link"><span data-i18n="footer.question">¿Tienes alguna pregunta?</span>
+                  <a href="contacto.html" data-i18n="footer.clickHere">Click aquí</a>
                 </span>
               </div>
             </div><!-- /.col-lg-4 -->
@@ -651,8 +652,9 @@
                         &copy; 2025 DECIMO DOTACIONES - IGNISAFE <span class="color-theme"></span>
                       </a>
                     </li>
-                    <li><a href="politicas-empresariales.html">Términos y condiciones </a></li>
-                    <li><a href="politicas-empresariales.html">Política de privacidad</a></li>
+                    <li><a href="politicas-empresariales.html" data-i18n="footer.terms">Términos y condiciones </a></li>
+                    <li><a href="politicas-empresariales.html" data-i18n="footer.privacy">Política de privacidad</a>
+                    </li>
                   </ul>
                 </nav>
 
@@ -677,10 +679,19 @@
       </form>
     </div><!-- /.module-search-container -->
 
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/573176385224" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contáctanos por WhatsApp">
+      <div class="whatsapp-float__btn">
+        <i class="fa fa-whatsapp"></i>
+      </div>
+      <span class="whatsapp-float__label">¡Escríbenos!</span>
+    </a>
+
   </div><!-- /.wrapper -->
 
   <script src="assets/js/jquery-3.3.1.min.js"></script>
   <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/i18n.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 

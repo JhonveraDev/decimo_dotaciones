@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8" />
@@ -7,9 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta name="description" content="Industic - Factory and Manufacturing Html Template">
   <link href="assets/images/favicon/favicon.png" rel="icon">
-  <title>Industic - Factory and Manufacturing Html Template</title>
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Roboto:400,500,700%7cRubik:400,500,700&display=swap">
+  <title>Décimo Dotaciones - Políticas Empresariales</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700%7cRubik:400,500,700&display=swap">
   <link rel="stylesheet" href="assets/css/libraries.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -32,36 +31,34 @@
           <div class="collapse navbar-collapse" id="mainNavigation">
             <ul class="navbar-nav ml-auto">
               <li class="nav__item">
-                <a href="index.html" class="nav__item-link">Inicio</a>
+                <a href="index.html" class="nav__item-link" data-i18n="nav.home">Inicio</a>
               </li>
               <li class="nav__item">
-                <a href="nosotros.html" class="nav__item-link">Nosotros</a>
+                <a href="nosotros.html" class="nav__item-link" data-i18n="nav.about">Nosotros</a>
               </li>
               <li class="nav__item">
-                <a href="linea-ignifuga.html" class="nav__item-link">línea Ignífuga</a>
+                <a href="linea-ignifuga.html" class="nav__item-link" data-i18n="nav.flame">línea Ignífuga</a>
               </li>
               <li class="nav__item">
-                <a href="catalogo.html" class="nav__item-link">Catálogo</a>
+                <a href="catalogo.html" class="nav__item-link" data-i18n="nav.catalog">Catálogo</a>
               </li>
               <li class="nav__item">
-                <a href="politicas-empresariales.html" class="nav__item-link">Políticas</a>
+                <a href="politicas-empresariales.html" class="nav__item-link" data-i18n="nav.policies">Políticas</a>
               </li>
               <li class="nav__item">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc7VdPHzuYxkZn1uTfcETGRPsJvXok1tpWJzd7cWhtbZiFIrA/viewform"
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfFGwjCG1T_JQYt4kFtrGWhm8Ot8-St2_dMyABzKSEfCnntng/viewform"
                   class="nav__item-link" target="_blank">PQRS</a>
               </li>
               <li class="nav__item">
-                <a href="contacto.html" class="nav__item-link">Contacto</a>
+                <a href="contacto.html" class="nav__item-link" data-i18n="nav.contact">Contacto</a>
               </li>
             </ul><!-- /.navbar-nav -->
           </div><!-- /.navbar-collapse -->
           <div class="navbar-modules">
             <ul class="list-unstyled d-flex align-items-center modules__btns-list">
-              <li class="d-none d-lg-block">
-                  <a href="https://wa.me/573176385224" class="btn btn__primary module__btn-request" target="_blank">
-                  <span>Whatsapp</span>
-                  <i class="icon-arrow-right2"></i>
-                </a>
+              <li class="lang-switcher">
+                <button class="btn-lang" id="langBtnEn" onclick="setLang('en')">EN</button>
+                <button class="btn-lang" id="langBtnEs" onclick="setLang('es')">ES</button>
               </li>
             </ul><!-- /.modules-wrapper -->
           </div><!-- /.navbar-modules -->
@@ -70,18 +67,18 @@
     </header><!-- /.Header -->
 
     <!-- ========================
-         page title 
+         page title
       =========================== -->
     <section id="page-title" class="page-title page-title-layout4 bg-overlay bg-parallax text-center">
       <div class="bg-img"><img src="assets/images/page-titles/3.png" alt="background"></div>
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-8 offset-lg-2">
-            <h1 class="pagetitle__heading">POLÍTICAS EMPRESARIALES</h1>
+            <h1 class="pagetitle__heading" data-i18n="pol.page.heading">POLÍTICAS EMPRESARIALES</h1>
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb justify-content-center">
-                <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Políticas Empresariales</li>
+                <li class="breadcrumb-item"><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page" data-i18n="pol.page.crumb">Políticas Empresariales</li>
               </ol>
             </nav>
           </div><!-- /.col-lg-8 -->
@@ -97,8 +94,8 @@
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-12">
             <div class="text__block">
-              <h5 class="text__block-title">POLÍTICA DE CAMBIOS – DÉCIMO DOTACIONES S.A.S. CAMBIOS O DEVOLUCIONES</h5>
-              <p class="text__block-desc">Si deseas hacer el cambio de alguno de nuestros productos, lo puedes hacer a
+              <h5 class="text__block-title" data-i18n="pol.t1">POLÍTICA DE CAMBIOS – DÉCIMO DOTACIONES S.A.S. CAMBIOS O DEVOLUCIONES</h5>
+              <p class="text__block-desc" data-i18n="pol.d1">Si deseas hacer el cambio de alguno de nuestros productos, lo puedes hacer a
                 través del formulario de contacto de nuestra página web o en nuestra dirección física: Carrera 64 # 4B –
                 92 Bogotá. Debes tener en cuenta que: Las prendas, calzado o elementos de protección personal en
                 promoción o con descuento, no tienen cambio en talla, color o referencia. Los cambios de los artículos
@@ -132,16 +129,16 @@
                 indicar el número de cuenta al que desea que se haga la transferencia del dinero. A través de reversión
                 del pago. Transacción que se verá reflejada treinta días hábiles después de recibir el producto en
                 nuestra bodega.</p>
-              <h5 class="text__block-title">POLÍTICA DE TRATAMIENTO DE DATOS – DÉCIMO DOTACIONES S.A.S.</h5>
-              <p class="text__block-desc">Conforme a la Ley 1581 de 2012 y al Decreto 1377 de 2013, DÉCIMO DOTACIONES
+              <h5 class="text__block-title" data-i18n="pol.t2">POLÍTICA DE TRATAMIENTO DE DATOS – DÉCIMO DOTACIONES S.A.S.</h5>
+              <p class="text__block-desc" data-i18n="pol.d2">Conforme a la Ley 1581 de 2012 y al Decreto 1377 de 2013, DÉCIMO DOTACIONES
                 S.A.S., considerada como Responsable y/o Encargada del tratamiento de datos personales que almacena y
                 recolecta de sus clientes en desarrollo de sus actividades comerciales, de ventas de sus productos en su
                 sede física o en los canales en línea, o en eventos promocionales, entre otros, requiere obtener su
                 autorización para continuar con el tratamiento de sus datos personales conforme a la política de
                 privacidad para el tratamiento de sus datos personales las cuales están disponibles en
                 www.decimodotaciones.com </p>
-              <h5 class="text__block-title">DEFINICIONES </h5>
-              <p class="text__block-desc">Para efectos de la ejecución de la presente política y de conformidad con la
+              <h5 class="text__block-title" data-i18n="pol.t3">DEFINICIONES </h5>
+              <p class="text__block-desc" data-i18n="pol.d3">Para efectos de la ejecución de la presente política y de conformidad con la
                 normatividad legal, serán aplicables las siguientes definiciones: a) Autorización: consentimiento
                 previo, expreso e informado del Titular para llevar a cabo el Tratamiento de datos personales. b) Aviso
                 de privacidad: documento físico, electrónico o en cualquier otro formato generado por el responsable que
@@ -169,9 +166,9 @@
                 Titular: persona natural cuyos datos personales sean objeto de Tratamiento. K) Tratamiento: cualquier
                 operación o conjunto de operaciones sobre datos personales, tales como la recolección, almacenamiento,
                 uso, circulación o supresión de los mismos.</p>
-              <h5 class="text__block-title">FINALIDAD CON LA QUE SE EFECTÚA LA RECOLECCIÓN DE DATOS PERSONALES Y
+              <h5 class="text__block-title" data-i18n="pol.t4">FINALIDAD CON LA QUE SE EFECTÚA LA RECOLECCIÓN DE DATOS PERSONALES Y
                 TRATAMIENTO DE LOS MISMOS</h5>
-              <p class="text__block-desc">Decimo Dotaciones SAS podrá hacer uso de los datos personales para: a)
+              <p class="text__block-desc" data-i18n="pol.d4">Decimo Dotaciones SAS podrá hacer uso de los datos personales para: a)
                 Ejecutar la relación contractual existente con sus clientes, proveedores y trabajadores, incluida el
                 pago de obligaciones contractuales; b) Proveer los servicios y/o los productos requeridos por sus
                 usuarios; c) Informar sobre nuevos productos o servicios y/o sobre cambios en los mismos; d) Evaluar la
@@ -206,8 +203,8 @@
                 Dotaciones SAS advierte a dichos terceros sobre la necesidad de proteger dicha información personal con
                 medidas de seguridad apropiadas, se prohíbe el uso de la información para fines propios y se solicita
                 que no se divulgue la información personal a otros. </p>
-              <h5 class="text__block-title">PRINCIPIOS APLICABLES AL TRATAMIENTO DE DATOS PERSONALES</h5>
-              <p class="text__block-desc">El tratamiento de datos personales en Decimo Dotaciones SAS se regirá por los
+              <h5 class="text__block-title" data-i18n="pol.t5">PRINCIPIOS APLICABLES AL TRATAMIENTO DE DATOS PERSONALES</h5>
+              <p class="text__block-desc" data-i18n="pol.d5">El tratamiento de datos personales en Decimo Dotaciones SAS se regirá por los
                 siguientes principios: a) Principio de finalidad: el Tratamiento de los datos personales recogidos debe
                 obedecer a una finalidad legítima, la cual debe ser informada al Titular; b) Principio de libertad: el
                 Tratamiento sólo puede llevarse a cabo con el consentimiento, previo, expreso e informado del Titular.
@@ -231,9 +228,9 @@
                 después de finalizada su relación con alguna de las labores que comprende el Tratamiento. PARÁGRAFO
                 PRIMERO: En el evento que se recolecten datos personales sensibles, el Titular podrá negarse a autorizar
                 su Tratamiento.</p>
-              <h5 class="text__block-title">DERECHOS DE LOS TITULARES DE DATOS PERSONALES OBJETO DE TRATAMIENTO POR
+              <h5 class="text__block-title" data-i18n="pol.t6">DERECHOS DE LOS TITULARES DE DATOS PERSONALES OBJETO DE TRATAMIENTO POR
                 PARTE DE DECIMO DOTACIONES SAS</h5>
-              <p class="text__block-desc">Los titulares de datos personales por sí o por intermedio de su representante
+              <p class="text__block-desc" data-i18n="pol.d6">Los titulares de datos personales por sí o por intermedio de su representante
                 y/o apoderado o su causahabiente podrán ejercer los siguientes derechos, respecto de los datos
                 personales que sean objeto de tratamiento por parte de DECIMO DOTACIONES SAS: a) Derecho de acceso: en
                 virtud del cual podrá acceder a los datos personales que estén bajo el control de La DECIMO DOTACIONES
@@ -251,8 +248,8 @@
                 persona que lo represente deberá demostrar su identidad y, de ser el caso, la calidad en virtud de la
                 cual representa al titular. PARÁGRAFO SEGUNDO: Los derechos de los menores de edad serán ejercidos por
                 medio de las personas que estén facultadas para representarlos. </p>
-              <h5 class="text__block-title">DEBERES DE DECIMO DOTACIONES SAS</h5>
-              <p class="text__block-desc">Todos los obligados a cumplir esta política deben tener presente que Decimo
+              <h5 class="text__block-title" data-i18n="pol.t7">DEBERES DE DECIMO DOTACIONES SAS</h5>
+              <p class="text__block-desc" data-i18n="pol.d7">Todos los obligados a cumplir esta política deben tener presente que Decimo
                 Dotaciones SAS está obligada a cumplir los deberes que al respecto imponga la ley. En consecuencia, se
                 deben cumplir las siguientes obligaciones: Garantizar al Titular, en todo tiempo, el pleno y efectivo
                 ejercicio del derecho de hábeas data. Conservar la información bajo las condiciones de seguridad
@@ -263,8 +260,8 @@
                 por los Titulares en los términos señalados en la presente ley. Adoptar un manual interno de políticas y
                 procedimientos para garantizar el adecuado cumplimiento de la presente ley y, en especial, para la
                 atención de consultas y reclamos por parte de los Titulares. Registrar en la base de datos la leyenda
-                “reclamo en trámite” en la forma en que se regula en la presente ley. Insertar en la base de datos la
-                leyenda “información en discusión judicial” una vez notificado por parte de la autoridad competente
+                "reclamo en trámite" en la forma en que se regula en la presente ley. Insertar en la base de datos la
+                leyenda "información en discusión judicial" una vez notificado por parte de la autoridad competente
                 sobre procesos judiciales relacionados con la calidad del dato personal. Abstenerse de circular
                 información que esté siendo controvertida por el Titular y cuyo bloqueo haya sido ordenado por la
                 Superintendencia de Industria y Comercio. Permitir el acceso a la información únicamente a las personas
@@ -274,8 +271,8 @@
                 de Industria y Comercio. PARÁGRAFO. En el evento en que concurran las calidades de responsable del
                 Tratamiento y Encargado del Tratamiento en la misma persona, le será exigible el cumplimiento de los
                 deberes previstos para cada uno. </p>
-              <h5 class="text__block-title">SOLICITUD DE AUTORIZACIÓN AL TITULAR DEL DATO PERSONAL</h5>
-              <p class="text__block-desc">Con antelación y/o al momento de efectuar la recolección del dato personal,
+              <h5 class="text__block-title" data-i18n="pol.t8">SOLICITUD DE AUTORIZACIÓN AL TITULAR DEL DATO PERSONAL</h5>
+              <p class="text__block-desc" data-i18n="pol.d8">Con antelación y/o al momento de efectuar la recolección del dato personal,
                 Decimo Dotaciones SAS solicitará al titular del dato su autorización para efectuar su recolección y
                 tratamiento, indicando la finalidad para la cual se solicita el dato, utilizando para esos efectos
                 medios técnicos automatizados, escritos u orales, que permitan conservar prueba de la autorización y/o
@@ -287,8 +284,8 @@
                 Datos de naturaleza pública. c) Casos de urgencia médica o sanitaria. d) Tratamiento de información
                 autorizado por la ley para fines históricos, estadísticos o científicos. e) Datos relacionados con el
                 Registro Civil de las Personas.</p>
-              <h5 class="text__block-title">LIMITACIONES TEMPORALES AL TRATAMIENTO DE LOS DATOS PERSONALES</h5>
-              <p class="text__block-desc">Decimo Dotaciones SAS solo podrá recolectar, almacenar, usar o circular los
+              <h5 class="text__block-title" data-i18n="pol.t9">LIMITACIONES TEMPORALES AL TRATAMIENTO DE LOS DATOS PERSONALES</h5>
+              <p class="text__block-desc" data-i18n="pol.d9">Decimo Dotaciones SAS solo podrá recolectar, almacenar, usar o circular los
                 datos personales durante el tiempo que sea razonable y necesario, de acuerdo con las finalidades que
                 justificaron el tratamiento, atendiendo a las disposiciones aplicables a la materia de que se trate y a
                 los aspectos administrativos, contables, fiscales, jurídicos e históricos de la información. Una vez
@@ -297,7 +294,7 @@
                 los datos personales deberán ser conservados cuando así se requiera para el cumplimiento de una
                 obligación legal o contractual.</p>
             </div><!-- /.text-block -->
-          </div><!-- /.col-lg-8 -->
+          </div><!-- /.col-lg-12 -->
         </div><!-- /.row -->
       </div><!-- /.container -->
     </section><!-- /.Text Content Section -->
@@ -313,60 +310,53 @@
               <div class="footer__widget-content">
                 <img src="assets/images/logo/logo-footer.png" alt="logo">
                 <p>Carrera 64 # 4B-92, Barrio La Pradera, <br>Bogotá, Colombia</p>
-                <p>Correo: <a href="mailto:info@decimodotaciones.com">info@decimodotaciones.com</a></p>
+                <p><span data-i18n="footer.emailLabel">Correo:</span> <a href="mailto:info@decimodotaciones.com">info@decimodotaciones.com</a></p>
                 <p><a href="tel:002010612457410" class="font-weight-bold color-white">(601) 443 2180</a></p>
               </div>
             </div><!-- /.col-lg-4 -->
             <div class="col-6 col-sm-6 col-md-3 col-lg-2 footer__widget footer__widget-nav">
-              <h6 class="footer__widget-title">Web</h6>
+              <h6 class="footer__widget-title" data-i18n="footer.web">Web</h6>
               <div class="footer__widget-content">
                 <nav>
                   <ul class="list-unstyled">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="linea-ignifuga.html">Línea Ignífuga</a></li>
-                    <li><a href="catalogo.html">Catálogo</a></li>
-                    <li><a href="politicas-empresariales.html">Políticas</a></li>
-                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSc7VdPHzuYxkZn1uTfcETGRPsJvXok1tpWJzd7cWhtbZiFIrA/viewform" target="_blank">PQRS</a></li>                   
-                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+                    <li><a href="nosotros.html" data-i18n="nav.about">Nosotros</a></li>
+                    <li><a href="linea-ignifuga.html" data-i18n="nav.flame">Línea Ignífuga</a></li>
+                    <li><a href="catalogo.html" data-i18n="nav.catalog">Catálogo</a></li>
+                    <li><a href="politicas-empresariales.html" data-i18n="nav.policies">Políticas</a></li>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfFGwjCG1T_JQYt4kFtrGWhm8Ot8-St2_dMyABzKSEfCnntng/viewform" target="_blank">PQRS</a></li>
+                    <li><a href="contacto.html" data-i18n="nav.contact">Contacto</a></li>
                   </ul>
                 </nav>
               </div><!-- /.footer-widget-content -->
             </div><!-- /.col-lg-2 -->
             <div class="col-6 col-sm-6 col-md-3 col-lg-2 footer__widget footer__widget-nav">
-              <h6 class="footer__widget-title">Empresa</h6>
+              <h6 class="footer__widget-title" data-i18n="footer.company">Empresa</h6>
               <div class="footer__widget-content">
                 <nav>
                   <ul class="list-unstyled">
-                    <li>
-                      <p>(601) 443 2180</p>
-                    </li>
+                    <li><p>(601) 443 2180</p></li>
                     <li><p>( +57 ) 317 638 5224</p></li>
-                    <li>
-                      <p>Carrera 64 # 4B-92</p>
-                    </li>
-                    <li>
-                      <p>Bogotá, Colombia</p>
-                    </li>
+                    <li><p>Carrera 64 # 4B-92</p></li>
+                    <li><p>Bogotá, Colombia</p></li>
                   </ul>
                 </nav>
               </div><!-- /.footer-widget-content -->
             </div><!-- /.col-lg-2 -->
             <div class="col-12 col-sm-12 col-md-6 col-lg-4 footer__widget footer__widget-newsletter">
               <div class="footer__widget-content">
-                <h6 class="footer__widget-title">Informes</h6>
-                <p>Regístrese para recibir alertas de la industria, nuestras últimas noticias, pensamientos y
-                  perspectivas.</p>
+                <h6 class="footer__widget-title" data-i18n="footer.reports">Informes</h6>
+                <p data-i18n="footer.newsletter.desc">Regístrese para recibir alertas de la industria, nuestras últimas noticias, pensamientos y perspectivas.</p>
                 <form class="widget__newsletter-form">
                   <div class="form-group mb-0">
-                    <input type="text" class="form-control" placeholder="Tu Correo Electrónico ">
-                    <button type="submit" class="btn btn__primary btn__hover2">Suscribir</button>
+                    <input type="text" class="form-control" data-i18n-placeholder="footer.newsletter.email" placeholder="Tu Correo Electrónico ">
+                    <button type="submit" class="btn btn__primary btn__hover2" data-i18n="footer.newsletter.btn">Suscribir</button>
                   </div>
                 </form>
               </div><!-- /.footer-widget-content -->
               <div class="text-right mt-20">
-                <span class="footer__contact-link">¿Tienes alguna pregunta?
-                  <a href="contacto.html">Click aquí</a>
+                <span class="footer__contact-link"><span data-i18n="footer.question">¿Tienes alguna pregunta?</span>
+                  <a href="contacto.html" data-i18n="footer.clickHere">Click aquí</a>
                 </span>
               </div>
             </div><!-- /.col-lg-4 -->
@@ -385,11 +375,10 @@
                         &copy; 2025 DECIMO DOTACIONES - IGNISAFE <span class="color-theme"></span>
                       </a>
                     </li>
-                    <li><a href="politicas-empresariales.html">Términos y condiciones </a></li>
-                    <li><a href="politicas-empresariales.html">Política de privacidad</a></li>
+                    <li><a href="politicas-empresariales.html" data-i18n="footer.terms">Términos y condiciones </a></li>
+                    <li><a href="politicas-empresariales.html" data-i18n="footer.privacy">Política de privacidad</a></li>
                   </ul>
                 </nav>
-
               </div><!-- /.Footer-copyright -->
             </div><!-- /.col-lg-6 -->
             <div class="col-sm-12 col-md-3 col-lg-3 d-flex align-items-center">
@@ -411,10 +400,19 @@
       </form>
     </div><!-- /.module-search-container -->
 
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/573176385224" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contáctanos por WhatsApp">
+      <div class="whatsapp-float__btn">
+        <i class="fa fa-whatsapp"></i>
+      </div>
+      <span class="whatsapp-float__label">¡Escríbenos!</span>
+    </a>
+
   </div><!-- /.wrapper -->
 
   <script src="assets/js/jquery-3.3.1.min.js"></script>
   <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/i18n.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 
