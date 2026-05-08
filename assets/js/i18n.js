@@ -57,7 +57,7 @@
       'index.feat3.title': 'Calidad y cumplimiento',
       'index.feat3.desc': 'Procesos orientados a entregar prendas con altos estándares de calidad, oportunidad y consistencia.',
       'index.feat4.title': 'Experiencia en sectores exigentes',
-      'index.feat4.desc': 'Acompañamos empresas que requieren protección frente a riesgos térmicos y eléctricos en sus operaciones.',
+      'index.feat4.desc': 'Acompañamos empresas que requieren protección frente a riesgos térmicos y eléctricos en sus operaciones. Esto aterriza exactamente tu intención de resaltar experiencia, diseño especializado, calidad y materiales/componentes certificados.',
 
       /* --- INDEX — ABOUT 1 --- */
       'index.about1.title': 'CONTAMOS CON CERTIFICACIONES DE CALIDAD ICONTEC',
@@ -118,6 +118,7 @@
       'nosotros.page.heading': 'Ignisafe 10, marca desarrollada por Decimo Dotaciones',
       'nosotros.page.crumb': 'Sobre Nosotros',
       'nosotros.about.sub': 'Empresa colombiana con experiencia en la producción de prendas técnicas.',
+      'nosotros.about.desc': 'Décimo Dotaciones es una empresa colombiana con experiencia en el diseño y producción de prendas especializadas. A través de su marca Ignisafe 10, desarrolla prendas de protección contra fuego repentino y arco eléctrico para sectores de alta exigencia.',
       'nosotros.about.title': 'Comprometidos con la excelencia',
       'nosotros.about.pol': 'POLÍTICAS DE CALIDAD',
       'nosotros.about.text': 'Nuestra compañía manufactura y comercializa elementos de protección, ropa ignífuga y resistente al arco eléctrico, asegurando el cumplimiento de los requisitos normativos y del cliente, siendo eficientes en nuestros procesos, competitivos en el mercado local, regional e internacional; lo anterior en procura de la mejora continua, la satisfacción de nuestros clientes y las partes interesadas.',
@@ -158,6 +159,7 @@
 
       /* --- CATALOGO PAGE --- */
       'cat.page.heading': 'Nuestro portafolio',
+      'cat.page.description': 'Conoce las prendas de protección industrial desarrolladas por Ignisafe 10 para operaciones con riesgo térmico y eléctrico.',
       'cat.page.crumb': 'Catálogo',
       'cat.filter': 'Catálogo',
       'cat.p1.title': 'OVEROL IGNIFUGO',
@@ -318,7 +320,7 @@
       'index.feat3.title': 'Quality and Compliance',
       'index.feat3.desc': 'Processes oriented to deliver garments with high quality standards, timeliness, and consistency.',
       'index.feat4.title': 'Experience in Demanding Sectors',
-      'index.feat4.desc': 'We support companies that require protection against thermal and electrical risks in their operations.',
+      'index.feat4.desc': 'We support companies that require protection against thermal and electrical risks in their operations. This perfectly captures your intention to highlight expertise, specialized design, quality, and certified materials/components.',
 
       /* --- INDEX — ABOUT 1 --- */
       'index.about1.title': 'WE HOLD ICONTEC QUALITY CERTIFICATIONS',
@@ -379,6 +381,7 @@
       'nosotros.page.heading': 'Ignisafe 10, Brand Developed by Decimo Dotaciones',
       'nosotros.page.crumb': 'About Us',
       'nosotros.about.sub': 'We manufacture protective garments and equipment with quality, compliance, and continuous improvement.',
+      'nosotros.about.desc': 'Décimo Dotaciones is a Colombian company with experience in the design and production of specialized garments. Through its Ignisafe 10 brand, it develops protection garments against sudden fire and electric arc for high-demand sectors.',
       'nosotros.about.title': 'Committed to excellence',
       'nosotros.about.pol': 'QUALITY POLICIES',
       'nosotros.about.text': 'Our company manufactures and markets protection elements, flame-resistant and arc-resistant clothing, ensuring compliance with regulatory and customer requirements, being efficient in our processes, competitive in the local, regional, and international market; all in pursuit of continuous improvement, and the satisfaction of our customers and interested parties.',
@@ -419,6 +422,7 @@
 
       /* --- CATALOGO PAGE --- */
       'cat.page.heading': 'Our Portfolio',
+      'cat.page.description': 'Discover the industrial protection garments developed by Ignisafe 10 for operations with thermal and electrical risk.',
       'cat.page.crumb': 'Catalog',
       'cat.filter': 'Catalog',
       'cat.p1.title': 'FLAME-RESISTANT COVERALL',
