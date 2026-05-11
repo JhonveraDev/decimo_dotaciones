@@ -229,6 +229,15 @@
       'cat.protCat.p15': '⮞ Categoría de Protección: HRC 2',
       'cat.protCat.p16': '⮞ Categoría de Protección: HRC 2',
 
+      /* --- CATALOGO — TYPE BUTTONS --- */
+      'cat.p2.btn.combinada': 'Cinta Combinada',
+      'cat.p2.btn.simple': 'Cinta Simple',
+      'cat.p3.btn.conCuello': 'Con cuello',
+      'cat.p3.btn.sinCuello': 'Sin cuello',
+      'cat.p3.btn.sinReflectivo': 'Sin reflectivo',
+      'cat.p4.btn.conReflectivo': 'Con Reflectivo',
+      'cat.p4.btn.sinReflectivo': 'Sin Reflectivo',
+
       /* --- CONTACTO PAGE --- */
       'cont.page.heading': 'CONTACTO',
       'cont.page.crumb': 'Contacto',
@@ -494,6 +503,15 @@
       'cat.protCat.p13': '⮞ Protection Category: HRC 2',
       'cat.protCat.p15': '⮞ Protection Category: HRC 2',
       'cat.protCat.p16': '⮞ Protection Category: HRC 2',
+
+      /* --- CATALOGO — TYPE BUTTONS --- */
+      'cat.p2.btn.combinada': 'Combined Tape',
+      'cat.p2.btn.simple': 'Simple Tape',
+      'cat.p3.btn.conCuello': 'With Collar',
+      'cat.p3.btn.sinCuello': 'No Collar',
+      'cat.p3.btn.sinReflectivo': 'No Reflective',
+      'cat.p4.btn.conReflectivo': 'With Reflective',
+      'cat.p4.btn.sinReflectivo': 'No Reflective',
 
       /* --- CONTACTO PAGE --- */
       'cont.page.heading': 'CONTACT',
