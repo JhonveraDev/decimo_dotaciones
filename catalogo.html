@@ -270,12 +270,29 @@
           <div class="col-sm-12 col-md-6 col-lg-6 mix filter-energy">
             <div class="project-item">
               <div class="project__img color-selector-wrapper">
-                <div class="color-buttons">
-                  <button class="color-btn active" style="background-color:#fc5a01;" title="naranja" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/buso/03.png" data-default="assets/images/case-studies/grid/buso/03.png"></button>
-                  <button class="color-btn" style="background-color:#1B3A6B;" title="Azul noche" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/buso/02.png" data-default="assets/images/case-studies/grid/buso/03.png"></button>
-                  <button class="color-btn" style="background-color:#c9b08d;" title="beige caliente" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/buso/01.png" data-default="assets/images/case-studies/grid/buso/03.png"></button>
+                <div class="pantalon-colors-wrap">
+                  <div class="color-buttons" data-variant="con-cuello">
+                    <button class="color-btn active" style="background-color:#fc5a01;" title="naranja" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/buso/03.png" data-default="assets/images/case-studies/grid/buso/03.png"></button>
+                    <button class="color-btn" style="background-color:#1B3A6B;" title="azul noche" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/buso/02.png" data-default="assets/images/case-studies/grid/buso/03.png"></button>
+                    <button class="color-btn" style="background-color:#c9b08d;" title="beige caliente" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/buso/01.png" data-default="assets/images/case-studies/grid/buso/03.png"></button>
+                  </div>
+                  <div class="color-buttons" data-variant="sin-cuello-reflectivo" style="display:none;">
+                    <button class="color-btn active" style="background-color:#fc5a01;" title="naranja" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/buso-sin-cuello-reflectivo/03.png" data-default="assets/images/case-studies/grid/buso-sin-cuello-reflectivo/03.png"></button>
+                    <button class="color-btn" style="background-color:#1B3A6B;" title="azul noche" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/buso-sin-cuello-reflectivo/02.png" data-default="assets/images/case-studies/grid/buso-sin-cuello-reflectivo/03.png"></button>
+                    <button class="color-btn" style="background-color:#c9b08d;" title="beige caliente" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/buso-sin-cuello-reflectivo/01.png" data-default="assets/images/case-studies/grid/buso-sin-cuello-reflectivo/03.png"></button>
+                  </div>
+                  <div class="color-buttons" data-variant="sin-cuello-sin-reflectivo" style="display:none;">
+                    <button class="color-btn active" style="background-color:#fc5a01;" title="naranja" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/buso-sin-cuello-sin-reflectivo/03.png" data-default="assets/images/case-studies/grid/buso-sin-cuello-sin-reflectivo/03.png"></button>
+                    <button class="color-btn" style="background-color:#1B3A6B;" title="azul noche" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/buso-sin-cuello-sin-reflectivo/02.png" data-default="assets/images/case-studies/grid/buso-sin-cuello-sin-reflectivo/03.png"></button>
+                    <button class="color-btn" style="background-color:#c9b08d;" title="beige caliente" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/buso-sin-cuello-sin-reflectivo/01.png" data-default="assets/images/case-studies/grid/buso-sin-cuello-sin-reflectivo/03.png"></button>
+                  </div>
                 </div>
                 <img src="assets/images/case-studies/grid/buso/03.png" alt="project img">
+                <div class="pantalon-type-toggle">
+                  <button class="type-btn active" data-target="con-cuello" onclick="switchPantalon(this)">Con cuello</button>
+                  <button class="type-btn" data-target="sin-cuello-reflectivo" onclick="switchPantalon(this)">Sin cuello</button>
+                  <button class="type-btn" data-target="sin-cuello-sin-reflectivo" onclick="switchPantalon(this)">Sin reflectivo</button>
+                </div>
               </div><!-- /.project-img -->
               <div class="project__content">
                 <h4 class="project__title"><a href="#" data-i18n="cat.p3.title">BUSO IGNIFUGO</a></h4>
