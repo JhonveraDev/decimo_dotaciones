@@ -12,6 +12,58 @@
     href="https://fonts.googleapis.com/css?family=Roboto:400,500,700%7cRubik:400,500,700&display=swap">
   <link rel="stylesheet" href="assets/css/libraries.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .color-selector-wrapper {
+      position: relative;
+      display: flex;
+      align-items: stretch;
+    }
+    .color-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding: 10px 8px;
+      background: rgba(0, 0, 0, 0.35);
+      border-radius: 6px 0 0 6px;
+      justify-content: center;
+      min-width: 46px;
+      z-index: 2;
+      flex-shrink: 0;
+    }
+    .color-btn {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      border: 3px solid rgba(255,255,255,0.4);
+      cursor: pointer;
+      transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+      outline: none;
+      padding: 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+      display: block;
+      align-self: center;
+    }
+    .color-btn:hover {
+      transform: scale(1.2);
+      border-color: rgba(255,255,255,0.9);
+      box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+    }
+    .color-btn.active {
+      border-color: #ffffff;
+      box-shadow: 0 0 0 2px #333, 0 3px 10px rgba(0,0,0,0.5);
+      transform: scale(1.15);
+    }
+    .color-selector-wrapper > img {
+      flex: 1;
+      min-width: 0;
+      width: 100%;
+      object-fit: cover;
+      transition: opacity 0.3s ease;
+    }
+    .color-selector-wrapper > img.img-loading {
+      opacity: 0.5;
+    }
+  </style>
 </head>
 
 <body>
@@ -104,8 +156,16 @@
           <!-- project item #1 -->
           <div class="col-sm-12 col-md-6 col-lg-6 mix filter-energy">
             <div class="project-item">
-              <div class="project__img">
-                <img src="assets/images/case-studies/grid/1.png" alt="project img">
+              <div class="project__img color-selector-wrapper">
+                <div class="color-buttons">
+                  <button class="color-btn active" style="background-color:red;" title="rojo" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/overol/04.png" data-default="assets/images/case-studies/grid/overol/04.png"></button>
+                  <button class="color-btn" style="background-color:#24283a;" title="azul noche" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/overol/06.png" data-default="assets/images/case-studies/grid/overol/04.png"></button>
+                  <button class="color-btn" style="background-color:#134aac;" title="azul intenso" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/overol/05.png" data-default="assets/images/case-studies/grid/overol/04.png"></button>
+                  <button class="color-btn" style="background-color:#fc5a01;" title="naranja" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/overol/03.png" data-default="assets/images/case-studies/grid/overol/04.png"></button>
+                  <button class="color-btn" style="background-color:#cbb295;" title="beige cálido" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/overol/02.png" data-default="assets/images/case-studies/grid/overol/04.png"></button>
+                  <button class="color-btn" style="background-color:#b1b2b7;" title="gris claro" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/overol/01.png" data-default="assets/images/case-studies/grid/overol/04.png"></button>
+                </div>
+                <img src="assets/images/case-studies/grid/overol/04.png" alt="project img">
               </div><!-- /.project-img -->
               <div class="project__content">
                 <h4 class="project__title"><a href="#" data-i18n="cat.p1.title">OVEROL IGNIFUGO</a></h4>
@@ -124,8 +184,16 @@
           <!-- project item #2 -->
           <div class="col-sm-12 col-md-6 col-lg-6 mix filter-energy">
             <div class="project-item">
-              <div class="project__img">
-                <img src="assets/images/case-studies/grid/2.png" alt="project img">
+              <div class="project__img color-selector-wrapper">
+                <div class="color-buttons">
+                  <button class="color-btn active" style="background-color:#1B3A6B;" title="Azul noche" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/camisa-ignifuga/06.png" data-default="assets/images/case-studies/grid/camisa-ignifuga/06.png"></button>
+                  <button class="color-btn active" style="background-color:#1642a7;" title="azul intenso" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/camisa-ignifuga/05.png" data-default="assets/images/case-studies/grid/camisa-ignifuga/06.png"></button>
+                  <button class="color-btn active" style="background-color:#e11a27;" title="rojo" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/camisa-ignifuga/04.png" data-default="assets/images/case-studies/grid/camisa-ignifuga/06.png"></button>
+                  <button class="color-btn active" style="background-color:#fc5a01;" title="naranja" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/camisa-ignifuga/03.png" data-default="assets/images/case-studies/grid/camisa-ignifuga/06.png"></button>
+                  <button class="color-btn active" style="background-color:#c9b08d;" title="beige calido" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/camisa-ignifuga/02.png" data-default="assets/images/case-studies/grid/camisa-ignifuga/06.png"></button>
+                  <button class="color-btn active" style="background-color:#aeadad;" title="gris" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/camisa-ignifuga/01.png" data-default="assets/images/case-studies/grid/camisa-ignifuga/06.png"></button>
+                </div>
+                <img src="assets/images/case-studies/grid/camisa-ignifuga/06.png" alt="project img">
               </div><!-- /.project-img -->
               <div class="project__content">
                 <h4 class="project__title"><a href="#" data-i18n="cat.p2.title">CAMISA IGNIFUGA</a></h4>
@@ -145,7 +213,10 @@
           <!-- project item #3 -->
           <div class="col-sm-12 col-md-6 col-lg-6 mix filter-energy">
             <div class="project-item">
-              <div class="project__img">
+              <div class="project__img color-selector-wrapper">
+                <div class="color-buttons">
+                  <button class="color-btn active" style="background-color:#1B3A6B;" title="Azul Navy" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/3-navy.png" data-default="assets/images/case-studies/grid/3.png"></button>
+                </div>
                 <img src="assets/images/case-studies/grid/3.png" alt="project img">
               </div><!-- /.project-img -->
               <div class="project__content">
@@ -164,7 +235,12 @@
           <!-- project item #4 -->
           <div class="col-sm-12 col-md-6 col-lg-6 mix filter-energy">
             <div class="project-item">
-              <div class="project__img">
+              <div class="project__img color-selector-wrapper">
+                <div class="color-buttons">
+                  <button class="color-btn active" style="background-color:#1B3A6B;" title="Azul Navy" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/4-navy.png" data-default="assets/images/case-studies/grid/4.png"></button>
+                  <button class="color-btn" style="background-color:#8B7355;" title="Caqui" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/4-khaki.png" data-default="assets/images/case-studies/grid/4.png"></button>
+                  <button class="color-btn" style="background-color:#2D59C8;" title="Azul Royal" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/4-royal.png" data-default="assets/images/case-studies/grid/4.png"></button>
+                </div>
                 <img src="assets/images/case-studies/grid/4.png" alt="project img">
               </div><!-- /.project-img -->
               <div class="project__content">
@@ -183,7 +259,11 @@
           <!-- project item #5 -->
           <div class="col-sm-12 col-md-6 col-lg-6 mix filter-energy">
             <div class="project-item">
-              <div class="project__img">
+              <div class="project__img color-selector-wrapper">
+                <div class="color-buttons">
+                  <button class="color-btn active" style="background-color:#1B3A6B;" title="Azul Navy" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/5-navy.png" data-default="assets/images/case-studies/grid/5.png"></button>
+                  <button class="color-btn" style="background-color:#E8621A;" title="Naranja" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/5-orange.png" data-default="assets/images/case-studies/grid/5.png"></button>
+                </div>
                 <img src="assets/images/case-studies/grid/5.png" alt="project img">
               </div><!-- /.project-img -->
               <div class="project__content">
@@ -202,7 +282,11 @@
           <!-- project item #6 -->
           <div class="col-sm-12 col-md-6 col-lg-6 mix filter-energy">
             <div class="project-item">
-              <div class="project__img">
+              <div class="project__img color-selector-wrapper">
+                <div class="color-buttons">
+                  <button class="color-btn active" style="background-color:#1B3A6B;" title="Azul Navy" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/6-navy.png" data-default="assets/images/case-studies/grid/6.png"></button>
+                  <button class="color-btn" style="background-color:#6E7B8B;" title="Gris" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/6-grey.png" data-default="assets/images/case-studies/grid/6.png"></button>
+                </div>
                 <img src="assets/images/case-studies/grid/6.png" alt="project img">
               </div><!-- /.project-img -->
               <div class="project__content">
@@ -221,7 +305,10 @@
           <!-- project item #7 -->
           <div class="col-sm-12 col-md-6 col-lg-6 mix filter-energy">
             <div class="project-item">
-              <div class="project__img">
+              <div class="project__img color-selector-wrapper">
+                <div class="color-buttons">
+                  <button class="color-btn active" style="background-color:#1560BD;" title="Azul Denim" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/7-denim.png" data-default="assets/images/case-studies/grid/7.png"></button>
+                </div>
                 <img src="assets/images/case-studies/grid/7.png" alt="project img">
               </div><!-- /.project-img -->
               <div class="project__content">
@@ -239,7 +326,11 @@
           <!-- project item #8 -->
           <div class="col-sm-12 col-md-6 col-lg-6 mix filter-energy">
             <div class="project-item">
-              <div class="project__img">
+              <div class="project__img color-selector-wrapper">
+                <div class="color-buttons">
+                  <button class="color-btn active" style="background-color:#1B3A6B;" title="Azul Navy" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/8-navy.png" data-default="assets/images/case-studies/grid/8.png"></button>
+                  <button class="color-btn" style="background-color:#6E7B8B;" title="Gris" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/8-grey.png" data-default="assets/images/case-studies/grid/8.png"></button>
+                </div>
                 <img src="assets/images/case-studies/grid/8.png" alt="project img">
               </div><!-- /.project-img -->
               <div class="project__content">
@@ -257,7 +348,12 @@
           <!-- project item #9 -->
           <div class="col-sm-12 col-md-6 col-lg-6 mix filter-energy">
             <div class="project-item">
-              <div class="project__img">
+              <div class="project__img color-selector-wrapper">
+                <div class="color-buttons">
+                  <button class="color-btn active" style="background-color:#1B3A6B;" title="Azul Navy" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/9-navy.png" data-default="assets/images/case-studies/grid/9.png"></button>
+                  <button class="color-btn" style="background-color:#6E7B8B;" title="Gris" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/9-grey.png" data-default="assets/images/case-studies/grid/9.png"></button>
+                  <button class="color-btn" style="background-color:#2D59C8;" title="Azul Royal" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/9-royal.png" data-default="assets/images/case-studies/grid/9.png"></button>
+                </div>
                 <img src="assets/images/case-studies/grid/9.png" alt="project img">
               </div><!-- /.project-img -->
               <div class="project__content">
@@ -277,7 +373,11 @@
           <!-- project item #10 -->
           <div class="col-sm-12 col-md-6 col-lg-6 mix filter-energy">
             <div class="project-item">
-              <div class="project__img">
+              <div class="project__img color-selector-wrapper">
+                <div class="color-buttons">
+                  <button class="color-btn active" style="background-color:#1B3A6B;" title="Azul Navy" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/10-navy.png" data-default="assets/images/case-studies/grid/10.png"></button>
+                  <button class="color-btn" style="background-color:#6E7B8B;" title="Gris" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/10-grey.png" data-default="assets/images/case-studies/grid/10.png"></button>
+                </div>
                 <img src="assets/images/case-studies/grid/10.png" alt="project img">
               </div><!-- /.project-img -->
               <div class="project__content">
@@ -295,7 +395,11 @@
           <!-- project item #11 -->
           <div class="col-sm-12 col-md-6 col-lg-6 mix filter-energy">
             <div class="project-item">
-              <div class="project__img">
+              <div class="project__img color-selector-wrapper">
+                <div class="color-buttons">
+                  <button class="color-btn active" style="background-color:#1B3A6B;" title="Azul Navy" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/11-navy.png" data-default="assets/images/case-studies/grid/11.png"></button>
+                  <button class="color-btn" style="background-color:#6E7B8B;" title="Gris" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/11-grey.png" data-default="assets/images/case-studies/grid/11.png"></button>
+                </div>
                 <img src="assets/images/case-studies/grid/11.png" alt="project img">
               </div><!-- /.project-img -->
               <div class="project__content">
@@ -312,7 +416,11 @@
           <!-- project item #12 -->
           <div class="col-sm-12 col-md-6 col-lg-6 mix filter-energy">
             <div class="project-item">
-              <div class="project__img">
+              <div class="project__img color-selector-wrapper">
+                <div class="color-buttons">
+                  <button class="color-btn active" style="background-color:#1B3A6B;" title="Azul Navy" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/12-navy.png" data-default="assets/images/case-studies/grid/12.png"></button>
+                  <button class="color-btn" style="background-color:#6E7B8B;" title="Gris" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/12-grey.png" data-default="assets/images/case-studies/grid/12.png"></button>
+                </div>
                 <img src="assets/images/case-studies/grid/12.png" alt="project img">
               </div><!-- /.project-img -->
               <div class="project__content">
@@ -329,7 +437,11 @@
           <!-- project item #13 -->
           <div class="col-sm-12 col-md-6 col-lg-6 mix filter-energy">
             <div class="project-item">
-              <div class="project__img">
+              <div class="project__img color-selector-wrapper">
+                <div class="color-buttons">
+                  <button class="color-btn active" style="background-color:#F5C518;" title="Amarillo" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/13-yellow.png" data-default="assets/images/case-studies/grid/13.png"></button>
+                  <button class="color-btn" style="background-color:#2D8E4A;" title="Verde" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/13-green.png" data-default="assets/images/case-studies/grid/13.png"></button>
+                </div>
                 <img src="assets/images/case-studies/grid/13.png" alt="project img">
               </div><!-- /.project-img -->
               <div class="project__content">
@@ -349,7 +461,10 @@
           <!-- project item #14 -->
           <div class="col-sm-12 col-md-6 col-lg-6 mix filter-energy">
             <div class="project-item">
-              <div class="project__img">
+              <div class="project__img color-selector-wrapper">
+                <div class="color-buttons">
+                  <button class="color-btn active" style="background-color:#F0F0F0; border-color: rgba(0,0,0,0.3);" title="Blanco" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/14-white.png" data-default="assets/images/case-studies/grid/14.png"></button>
+                </div>
                 <img src="assets/images/case-studies/grid/14.png" alt="project img">
               </div><!-- /.project-img -->
               <div class="project__content">
@@ -368,7 +483,10 @@
           <!-- project item #15 -->
           <div class="col-sm-12 col-md-6 col-lg-6 mix filter-energy">
             <div class="project-item">
-              <div class="project__img">
+              <div class="project__img color-selector-wrapper">
+                <div class="color-buttons">
+                  <button class="color-btn active" style="background-color:#1560BD;" title="Azul Denim" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/15-denim.png" data-default="assets/images/case-studies/grid/15.png"></button>
+                </div>
                 <img src="assets/images/case-studies/grid/15.png" alt="project img">
               </div><!-- /.project-img -->
               <div class="project__content">
@@ -386,7 +504,10 @@
           <!-- project item #16 -->
           <div class="col-sm-12 col-md-6 col-lg-6 mix filter-energy">
             <div class="project-item">
-              <div class="project__img">
+              <div class="project__img color-selector-wrapper">
+                <div class="color-buttons">
+                  <button class="color-btn active" style="background-color:#1560BD;" title="Azul Denim" onclick="changeProductColor(this)" data-img="assets/images/case-studies/grid/16-denim.png" data-default="assets/images/case-studies/grid/16.png"></button>
+                </div>
                 <img src="assets/images/case-studies/grid/16.png" alt="project img">
               </div><!-- /.project-img -->
               <div class="project__content">
@@ -520,6 +641,31 @@
   <script src="assets/js/plugins.js"></script>
   <script src="assets/js/i18n.js"></script>
   <script src="assets/js/main.js"></script>
+  <script>
+    function changeProductColor(btn) {
+      var wrapper = btn.closest('.color-selector-wrapper');
+      var img = wrapper.querySelector('img');
+      var colorImg = btn.getAttribute('data-img');
+      var defaultImg = btn.getAttribute('data-default');
+
+      wrapper.querySelectorAll('.color-btn').forEach(function(b) {
+        b.classList.remove('active');
+      });
+      btn.classList.add('active');
+
+      img.classList.add('img-loading');
+      var testImg = new Image();
+      testImg.onload = function() {
+        img.src = colorImg;
+        img.classList.remove('img-loading');
+      };
+      testImg.onerror = function() {
+        img.src = defaultImg;
+        img.classList.remove('img-loading');
+      };
+      testImg.src = colorImg;
+    }
+  </script>
 </body>
 
 </html>
