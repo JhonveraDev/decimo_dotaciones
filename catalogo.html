@@ -698,23 +698,37 @@
       var target = btn.getAttribute('data-target');
       var wrapper = btn.closest('.color-selector-wrapper');
 
+      // Find the index of the currently active color in the visible set
+      var activeIndex = 0;
+      wrapper.querySelectorAll('.color-buttons').forEach(function(set) {
+        if (set.style.display !== 'none') {
+          Array.from(set.querySelectorAll('.color-btn')).forEach(function(b, i) {
+            if (b.classList.contains('active')) activeIndex = i;
+          });
+        }
+      });
+
+      // Update toggle button states
       wrapper.querySelectorAll('.type-btn').forEach(function(b) {
         b.classList.remove('active');
       });
       btn.classList.add('active');
 
+      // Show target set, hide others
       wrapper.querySelectorAll('.color-buttons').forEach(function(set) {
         set.style.display = set.getAttribute('data-variant') === target ? 'flex' : 'none';
       });
 
-      var activeSet = wrapper.querySelector('.color-buttons[data-variant="' + target + '"]');
+      // Activate the same color index in the new set and update image
+      var newSet = wrapper.querySelector('.color-buttons[data-variant="' + target + '"]');
       wrapper.querySelectorAll('.color-btn').forEach(function(b) {
         b.classList.remove('active');
       });
-      var firstBtn = activeSet.querySelector('.color-btn');
-      if (firstBtn) {
-        firstBtn.classList.add('active');
-        wrapper.querySelector('img').src = firstBtn.getAttribute('data-img');
+      var newBtns = newSet.querySelectorAll('.color-btn');
+      var targetBtn = newBtns[activeIndex] || newBtns[0];
+      if (targetBtn) {
+        targetBtn.classList.add('active');
+        wrapper.querySelector('img').src = targetBtn.getAttribute('data-img');
       }
     }
 
