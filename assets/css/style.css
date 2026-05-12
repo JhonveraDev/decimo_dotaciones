@@ -8147,7 +8147,8 @@ textarea.form-control {
    Compromiso Ambiental Section
 ========================================================= */
 .ca-section {
-  padding: 80px 0;
+  padding-bottom: 150px;
+  padding-top: 0;
   background: #ffffff;
 }
 

@@ -97,9 +97,9 @@
       'index.banner2.subtitle': 'Promovemos políticas inclusivas que garantizan ambientes laborales libres de discriminación y acoso.',
       'index.banner2.title': 'Compromiso con la Igualdad y el Respeto',
       'index.banner2.desc': 'Promover y respetar los derechos de las personas y desarrollar políticas y prácticas que protegen a las personas de la discriminación, la violencia o el acoso de cualquier tipo, sigue siendo una obligación fundamental. Todas ellas se incorporan a nuestra selección, formación, promoción, procesos de desarrollo y remuneración. Lo invitamos a que si por algún caso usted conoce o quiere comunicarse con nosotros, dentro del programa se implementó un formato de denuncia de discriminación, este formato lo puede solicitar en los siguientes correos:',
-      'index.banner2.fancy1': 'Igualdad <br> Respeto',
-      'index.banner2.fancy2': 'Compromiso <br> Humano',
-      'index.banner2.fancy3': 'Cultura <br> Inclusiva',
+      'index.banner2.fancy1': 'Igualdad   Respeto',
+      'index.banner2.fancy2': 'Compromiso   Humano',
+      'index.banner2.fancy3': 'Cultura   Inclusiva',
 
       /* --- NOSOTROS PAGE --- */
       'nosotros.page.sub': 'Calidad, confianza e innovación',
@@ -116,9 +116,9 @@
       'nosotros.mision.title': 'MISIÓN',
       'nosotros.mision.desc': 'Fabricar prendas técnicas de protección personal, cumpliendo con altos estándares en: calidad, servicio y buenas prácticas, asegurando una operación sostenible y rentable, aportando valor a todas las partes interesadas en la cadena productiva y comercial.',
       'nosotros.banner.title': 'ASESORIA PERSONALIZADA',
-      'nosotros.banner.fancy1': 'Contacto <br> Directo',
-      'nosotros.banner.fancy2': 'Entrega <br> Inmediata',
-      'nosotros.banner.fancy3': 'Producto <br>Garantizado',
+      'nosotros.banner.fancy1': 'Contacto   Directo',
+      'nosotros.banner.fancy2': 'Entrega   Inmediata',
+      'nosotros.banner.fancy3': 'Producto  Garantizado',
       'nosotros.banner.counter': 'Fabricamos ropa ignífuga y elementos de protección con altos estándares de calidad y compromiso con nuestros clientes.',
 
       /* --- NOSOTROS: COMPROMISO AMBIENTAL --- */
@@ -130,13 +130,13 @@
       'nosotros.ambiental.card2.title': 'Transformación con propósito',
       'nosotros.ambiental.card2.desc': 'Convertimos overoles recuperados en nuevos productos que generan valor e impacto positivo.',
       'nosotros.ambiental.pillar1.num': '1.',
-      'nosotros.ambiental.pillar1.label': 'Repotenciación<br>de prendas',
+      'nosotros.ambiental.pillar1.label': 'Repotenciación de prendas',
       'nosotros.ambiental.pillar2.num': '2.',
-      'nosotros.ambiental.pillar2.label': 'Economía<br>circular',
+      'nosotros.ambiental.pillar2.label': 'Economía circular',
       'nosotros.ambiental.pillar3.num': '3.',
-      'nosotros.ambiental.pillar3.label': 'Insumos seleccionados<br>con procesos OEKO-TEX®',
+      'nosotros.ambiental.pillar3.label': 'Insumos seleccionados con procesos OEKO-TEX®',
       'nosotros.ambiental.pillar4.num': '4.',
-      'nosotros.ambiental.pillar4.label': 'Gestión responsable<br>de residuos',
+      'nosotros.ambiental.pillar4.label': 'Gestión responsable de residuos',
 
       /* --- LINEA IGNIFUGA PAGE --- */
       'linea.page.subtitle': 'Protección para riesgos térmicos y eléctricos',
@@ -151,9 +151,9 @@
       'linea.about1.desc4': '<strong>Innovación </strong>- Evolución permanente en diseño, materiales y soluciones técnicas.',
       'linea.about1.btn': 'Contacto',
       'linea.banner.title': 'ASESORIA PERSONALIZADA',
-      'linea.banner.fancy1': 'Contacto <br> Directo',
-      'linea.banner.fancy2': 'Entrega <br> Inmediata',
-      'linea.banner.fancy3': 'Producto <br>Garantizado',
+      'linea.banner.fancy1': 'Contacto   Directo',
+      'linea.banner.fancy2': 'Entrega   Inmediata',
+      'linea.banner.fancy3': 'Producto  Garantizado',
       'linea.banner.counter': 'Fabricamos ropa ignífuga y elementos de protección con altos estándares de calidad y compromiso con nuestros clientes.',
       'linea.about2.title': 'PROTECCIÓN CONTRA ARCO ELÉCTRICO & FUEGO REPENTINO',
       'linea.about2.desc1': '⮞ Tenemos todas las opciones para proteger correctamente a sus trabajadores en el sector eléctrico y energético.',
@@ -389,9 +389,9 @@
       'index.banner2.subtitle': 'We promote inclusive policies that guarantee work environments free of discrimination and harassment.',
       'index.banner2.title': 'Commitment to Equality and Respect',
       'index.banner2.desc': 'Promoting and respecting people\'s rights and developing policies and practices that protect people from discrimination, violence, or harassment of any kind remains a fundamental obligation. All of these are incorporated into our selection, training, promotion, development, and compensation processes. We invite you, if by chance you know or wish to contact us, that within the program a discrimination complaint form was implemented; this form can be requested at the following email addresses:',
-      'index.banner2.fancy1': 'Equality <br> Respect',
-      'index.banner2.fancy2': 'Human <br> Commitment',
-      'index.banner2.fancy3': 'Inclusive <br> Culture',
+      'index.banner2.fancy1': 'Equality   Respect',
+      'index.banner2.fancy2': 'Human   Commitment',
+      'index.banner2.fancy3': 'Inclusive   Culture',
 
       /* --- NOSOTROS PAGE --- */
       'nosotros.page.sub': 'Quality, trust, and innovation',
@@ -408,9 +408,9 @@
       'nosotros.mision.title': 'MISSION',
       'nosotros.mision.desc': 'To manufacture technical personal protective garments, complying with high standards in: quality, service, and best practices, ensuring a sustainable and profitable operation, adding value to all stakeholders in the production and commercial chain.',
       'nosotros.banner.title': 'PERSONALIZED ADVICE',
-      'nosotros.banner.fancy1': 'Direct <br> Contact',
-      'nosotros.banner.fancy2': 'Immediate <br> Delivery',
-      'nosotros.banner.fancy3': 'Guaranteed <br> Product',
+      'nosotros.banner.fancy1': 'Direct   Contact',
+      'nosotros.banner.fancy2': 'Immediate   Delivery',
+      'nosotros.banner.fancy3': 'Guaranteed   Product',
       'nosotros.banner.counter': 'We manufacture flame-resistant clothing and protective elements with high quality standards and commitment to our customers.',
 
       /* --- NOSOTROS: ENVIRONMENTAL COMMITMENT --- */
@@ -422,13 +422,13 @@
       'nosotros.ambiental.card2.title': 'Purposeful transformation',
       'nosotros.ambiental.card2.desc': 'We convert recovered overalls into new products that generate value and positive impact.',
       'nosotros.ambiental.pillar1.num': '1.',
-      'nosotros.ambiental.pillar1.label': 'Garment<br>refurbishment',
+      'nosotros.ambiental.pillar1.label': 'Garment refurbishment',
       'nosotros.ambiental.pillar2.num': '2.',
-      'nosotros.ambiental.pillar2.label': 'Circular<br>economy',
+      'nosotros.ambiental.pillar2.label': 'Circular economy',
       'nosotros.ambiental.pillar3.num': '3.',
-      'nosotros.ambiental.pillar3.label': 'Inputs selected<br>with OEKO-TEX® processes',
+      'nosotros.ambiental.pillar3.label': 'Inputs selected with OEKO-TEX® processes',
       'nosotros.ambiental.pillar4.num': '4.',
-      'nosotros.ambiental.pillar4.label': 'Responsible<br>waste management',
+      'nosotros.ambiental.pillar4.label': 'Responsible waste management',
 
       /* --- LINEA IGNIFUGA PAGE --- */
       'linea.page.subtitle': 'Protection against thermal and electrical hazards',
@@ -443,9 +443,9 @@
       'linea.about1.desc4': '<strong>Innovation </strong>- Permanent evolution in design, materials and technical solutions.',
       'linea.about1.btn': 'Contact',
       'linea.banner.title': 'PERSONALIZED ADVICE',
-      'linea.banner.fancy1': 'Direct <br> Contact',
-      'linea.banner.fancy2': 'Immediate <br> Delivery',
-      'linea.banner.fancy3': 'Guaranteed <br> Product',
+      'linea.banner.fancy1': 'Direct   Contact',
+      'linea.banner.fancy2': 'Immediate   Delivery',
+      'linea.banner.fancy3': 'Guaranteed   Product',
       'linea.banner.counter': 'We manufacture flame-resistant clothing and protective elements with high quality standards and commitment to our customers.',
       'linea.about2.title': 'ELECTRIC ARC & FLASH FIRE PROTECTION',
       'linea.about2.desc1': '⮞ We have all the options to properly protect your workers in the electrical and energy sector.',
@@ -593,7 +593,7 @@
       if (t[key] !== undefined) el.textContent = t[key];
     });
 
-    /* inner HTML (for keys with <br>, <strong>, etc.) */
+    /* inner HTML (for keys with  , <strong>, etc.) */
     document.querySelectorAll('[data-i18n-html]').forEach(function (el) {
       var key = el.getAttribute('data-i18n-html');
       if (t[key] !== undefined) el.innerHTML = t[key];
