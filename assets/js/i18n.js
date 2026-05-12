@@ -121,6 +121,23 @@
       'nosotros.banner.fancy3': 'Producto <br>Garantizado',
       'nosotros.banner.counter': 'Fabricamos ropa ignífuga y elementos de protección con altos estándares de calidad y compromiso con nuestros clientes.',
 
+      /* --- NOSOTROS: COMPROMISO AMBIENTAL --- */
+      'nosotros.ambiental.title1': 'Compromiso',
+      'nosotros.ambiental.title2': ' ambiental',
+      'nosotros.ambiental.desc': 'En Ignisafe 10 entendemos que proteger a las personas también implica proteger el entorno. Por eso desarrollamos iniciativas que extienden la vida útil de nuestras prendas, como la repotenciación de overoles, jeans y camisas, y la transformación de prendas usadas en nuevos productos, como morrales elaborados a partir de overoles recuperados. Además, seleccionamos cuidadosamente los insumos que hacen parte de nuestras prendas, trabajando con fabricantes cuyos procesos cuentan con certificación OEKO-TEX®, lo que nos permite ofrecer materiales de calidad con un enfoque más responsable.',
+      'nosotros.ambiental.card1.title': 'Repotenciación de prendas',
+      'nosotros.ambiental.card1.desc': 'Reparamos, reforzamos y certificamos para extender su vida útil y mantener la seguridad.',
+      'nosotros.ambiental.card2.title': 'Transformación con propósito',
+      'nosotros.ambiental.card2.desc': 'Convertimos overoles recuperados en nuevos productos que generan valor e impacto positivo.',
+      'nosotros.ambiental.pillar1.num': '1.',
+      'nosotros.ambiental.pillar1.label': 'Repotenciación<br>de prendas',
+      'nosotros.ambiental.pillar2.num': '2.',
+      'nosotros.ambiental.pillar2.label': 'Economía<br>circular',
+      'nosotros.ambiental.pillar3.num': '3.',
+      'nosotros.ambiental.pillar3.label': 'Insumos seleccionados<br>con procesos OEKO-TEX®',
+      'nosotros.ambiental.pillar4.num': '4.',
+      'nosotros.ambiental.pillar4.label': 'Gestión responsable<br>de residuos',
+
       /* --- LINEA IGNIFUGA PAGE --- */
       'linea.page.subtitle': 'Protección para riesgos térmicos y eléctricos',
       'linea.page.desc': 'Prendas de protección contra fuego repentino y arco eléctrico, diseñadas para entornos de trabajo donde la seguridad del trabajador es fundamental.',
@@ -395,6 +412,23 @@
       'nosotros.banner.fancy2': 'Immediate <br> Delivery',
       'nosotros.banner.fancy3': 'Guaranteed <br> Product',
       'nosotros.banner.counter': 'We manufacture flame-resistant clothing and protective elements with high quality standards and commitment to our customers.',
+
+      /* --- NOSOTROS: ENVIRONMENTAL COMMITMENT --- */
+      'nosotros.ambiental.title1': 'Environmental',
+      'nosotros.ambiental.title2': ' commitment',
+      'nosotros.ambiental.desc': 'At Ignisafe 10, we understand that protecting people also means protecting the environment. That"s why we develop initiatives that extend the lifespan of our garments, such as refurbishing overalls, jeans, and shirts, and transforming used garments into new products, like backpacks made from recycled overalls. Furthermore, we carefully select the materials used in our garments, working with manufacturers whose processes are OEKO-TEX® certified, allowing us to offer quality materials with a more responsible approach.',
+      'nosotros.ambiental.card1.title': 'Garment refurbishment',
+      'nosotros.ambiental.card1.desc': 'We repair, reinforce and certify to extend the lifespan and maintain safety.',
+      'nosotros.ambiental.card2.title': 'Purposeful transformation',
+      'nosotros.ambiental.card2.desc': 'We convert recovered overalls into new products that generate value and positive impact.',
+      'nosotros.ambiental.pillar1.num': '1.',
+      'nosotros.ambiental.pillar1.label': 'Garment<br>refurbishment',
+      'nosotros.ambiental.pillar2.num': '2.',
+      'nosotros.ambiental.pillar2.label': 'Circular<br>economy',
+      'nosotros.ambiental.pillar3.num': '3.',
+      'nosotros.ambiental.pillar3.label': 'Inputs selected<br>with OEKO-TEX® processes',
+      'nosotros.ambiental.pillar4.num': '4.',
+      'nosotros.ambiental.pillar4.label': 'Responsible<br>waste management',
 
       /* --- LINEA IGNIFUGA PAGE --- */
       'linea.page.subtitle': 'Protection against thermal and electrical hazards',

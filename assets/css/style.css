@@ -8142,3 +8142,300 @@ textarea.form-control {
     font-size: 24px;
   }
 }
+
+/* =========================================================
+   Compromiso Ambiental Section
+========================================================= */
+.ca-section {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+.ca-section__row {
+  margin-bottom: 50px;
+}
+
+.ca-section__right {
+  margin-top: 0;
+}
+
+.ca-heading {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #1a3c5e;
+  margin-bottom: 16px;
+}
+
+.ca-heading--green {
+  color: #4a8040;
+}
+
+.ca-divider {
+  width: 52px;
+  height: 3px;
+  background: #4a8040;
+  margin-bottom: 24px;
+}
+
+.ca-text {
+  color: #555;
+  line-height: 1.85;
+  font-size: 0.96rem;
+}
+
+/* Cards */
+.ca-card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.09);
+  background: #fff;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.ca-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.ca-card__img-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.ca-card__img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.ca-card:hover .ca-card__img {
+  transform: scale(1.04);
+}
+
+.ca-card__badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 38px;
+  height: 38px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  z-index: 1;
+}
+
+.ca-card__badge svg {
+  width: 20px;
+  height: 20px;
+  stroke: #4a8040;
+}
+
+.ca-card__hover-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(26, 60, 94, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.ca-card__hover-overlay svg {
+  width: 36px;
+  height: 36px;
+}
+
+.ca-card:hover .ca-card__hover-overlay {
+  opacity: 1;
+}
+
+/* Modal */
+.ca-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+
+.ca-modal.is-open {
+  display: flex;
+}
+
+.ca-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  cursor: pointer;
+}
+
+.ca-modal__dialog {
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  max-width: 660px;
+  width: 92%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+  animation: caModalIn 0.25s ease;
+}
+
+@keyframes caModalIn {
+  from { opacity: 0; transform: scale(0.94) translateY(16px); }
+  to   { opacity: 1; transform: scale(1)    translateY(0);    }
+}
+
+.ca-modal__close {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  z-index: 2;
+  background: rgba(255,255,255,0.9);
+  border: none;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  font-size: 1.3rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  transition: background 0.2s;
+}
+
+.ca-modal__close:hover {
+  background: #fff;
+}
+
+.ca-modal__img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  display: block;
+  background: #f4f4f4;
+}
+
+.ca-modal__content {
+  padding: 24px 28px 28px;
+}
+
+.ca-modal__title {
+  color: #4a8040;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.ca-modal__desc {
+  color: #555;
+  font-size: 0.97rem;
+  line-height: 1.75;
+  margin: 0;
+}
+
+body.ca-modal-open {
+  overflow: hidden;
+}
+
+/* Pillars */
+.ca-pillars {
+  border-top: 1px solid #e8e8e8;
+  padding-top: 40px;
+}
+
+.ca-pillar-col {
+  border-right: 1px solid #e8e8e8;
+}
+
+.ca-pillar-col--last {
+  border-right: none;
+}
+
+.ca-pillar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 12px;
+}
+
+.ca-pillar__icon {
+  width: 68px;
+  height: 68px;
+  margin-bottom: 14px;
+}
+
+.ca-pillar__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.ca-pillar__label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #1a3c5e;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.ca-pillar__num {
+  color: #4a8040;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-right: 3px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 991px) {
+  .ca-section__right {
+    margin-top: 40px;
+  }
+
+  .ca-heading {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ca-pillar-col {
+    border-right: none;
+    margin-bottom: 30px;
+  }
+
+  .ca-pillars {
+    padding-top: 30px;
+  }
+
+  .ca-section__row {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .ca-heading {
+    font-size: 1.7rem;
+  }
+
+  .ca-card__img {
+    height: 200px;
+  }
+
+  .ca-section {
+    padding: 50px 0;
+  }
+}
