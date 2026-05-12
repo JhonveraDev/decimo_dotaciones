@@ -57,7 +57,7 @@
       'index.feat3.title': 'Calidad y cumplimiento',
       'index.feat3.desc': 'Procesos orientados a entregar prendas con altos estándares de calidad, oportunidad y consistencia.',
       'index.feat4.title': 'Experiencia en sectores exigentes',
-      'index.feat4.desc': 'Acompañamos empresas que requieren protección frente a riesgos térmicos y eléctricos en sus operaciones. Esto aterriza exactamente tu intención de resaltar experiencia, diseño especializado, calidad y materiales/componentes certificados.',
+      'index.feat4.desc': 'Acompañamos empresas que requieren protección frente a riesgos térmicos y eléctricos en sus operaciones. Calidad y materiales/componentes certificados.',
 
       /* --- INDEX — ABOUT 1 --- */
       'index.about1.title': 'CONTAMOS CON CERTIFICACIONES DE CALIDAD ICONTEC',
@@ -71,9 +71,9 @@
       'index.blog1.title': 'Ignisafe 10, marca desarrollada por Decimo Dotaciones',
       'index.blog1.desc': 'Somos una empresa colombiana productora de prendas especializadas de protección personal, con altos estándares de calidad y servicio.',
       'index.blog1.btn': 'Ver Más',
-      'index.blog2.cat': 'Ofertas del Mes en Protección y Vestuario',
+      'index.blog2.cat': 'Proteccion y vestuario especializado',
       'index.blog2.title': 'NUESTRO CATÁLOGO',
-      'index.blog2.desc': 'Conoce nuestros productos del mes. Encuentra grandes descuentos para tus equipos de protección y vestuario.',
+      'index.blog2.desc': 'Brindamos vestuario especializado diseñado para ofrecer máxima protección, comodidad y seguridad a su equipo de trabajo, garantizando un entorno laboral más seguro y profesional.',
       'index.blog2.btn': 'Ver Más',
       'index.blog3.cat': 'Protección confiable frente al fuego y la electricidad',
       'index.blog3.title': 'LÍNEA IGNÍFUGA',
@@ -92,19 +92,7 @@
       'index.about2.rel.desc': 'Prendas ignífugas diseñadas para ofrecer fiabilidad y protección constante en los entornos más exigentes.',
       'index.about2.inn.title': 'Innovación',
       'index.about2.inn.desc': '> Incorporamos **innovación y tecnología** en cada prenda ignífuga para brindar mayor seguridad y comodidad al trabajador.',
-
-      /* --- INDEX — SERVICES --- */
-      'index.serv.subtitle': 'APRECIADOS ALIADOS COMERCIALES:',
-      'index.serv.title': 'IMPLEMENTACIÓN DE SELLO DE NO DISCRIMINACIÓN​',
-      'index.serv.desc1': 'Nos complace compartir con ustedes que nuestra empresa DECIMO DOTACIONES S.A.S. ha gestionado y recibido con éxito el sello de no discriminación, distintivo otorgado por Icontec, lo que nos enorgullece y nos motiva a compartir, fortalecer y promover la inclusión y la lucha contra cualquier forma de discriminación dentro de la compañía y con las partes interesadas externas, como lo son nuestros Clientes y Proveedores.',
-      'index.serv.desc2': 'Queremos aprovechar la oportunidad para invitarlos a cultivar las diferencias y promover el respeto y la dignidad para todos es lo que nos permite avanzar como sociedad, de tal manera que la diversidad y la igualdad de oportunidades conducen a un mayor bienestar, crecimiento, desarrollo económico y competitividad.',
-      'index.serv.item1.title': 'Comprometidos con la inclusión',
-      'index.serv.item1.desc': 'En DÉCIMO DOTACIONES promovemos un entorno donde todas las personas son valoradas y respetadas, sin distinción alguna.',
-      'index.serv.item2.title': 'Diversidad que impulsa',
-      'index.serv.item2.desc': 'Creemos que la diversidad fortalece nuestra cultura organizacional y contribuye al desarrollo y la competitividad.',
-      'index.serv.item3.title': 'Espacios seguros y respetuosos',
-      'index.serv.item3.desc': 'Implementamos políticas que garantizan un ambiente libre de discriminación, violencia o acoso, promoviendo el bienestar.',
-
+      
       /* --- INDEX — BANNER 2 --- */
       'index.banner2.subtitle': 'Promovemos políticas inclusivas que garantizan ambientes laborales libres de discriminación y acoso.',
       'index.banner2.title': 'Compromiso con la Igualdad y el Respeto',
@@ -172,7 +160,7 @@
       'cat.p2.desc': 'resistente a ráfagas de fuego de corta duración y arco eléctrico. Fabricada con fibras naturales y fibras de poliamida de alta tenacidad, que impiden la propagación del fuego y protegen de la exposición al calor, proporcionando confort y alta transpirabilidad',
       'cat.p2.colors': '⮞ Colores disponibles: Azul Navy, Azul Rey, Rojo, Naranja, Caqui, Gris.',
       'cat.p3.title': 'BUSO IGNIFUGO',
-      'cat.p3.desc': 'Resistente a ráfagas de fuego de corta duración y arco eléctrico, prenda interior o exterior multipropósito, como elemento de protección individual contra riesgos térmicos.',
+      'cat.p3.desc': 'Elaborado en tejido de punto ignifugo, comodo para el usuario, ideal para personal administrativo. Resistente a ráfagas de fuego de corta duración y arco eléctrico, prenda interior o exterior multipropósito, como elemento de protección individual contra riesgos térmicos.',
       'cat.p3.colors': '⮞ Colores disponibles: Naranja, Azul Navy, Caqui',
       'cat.p4.title': 'PANTALON IGNIFUGO',
       'cat.p4.desc': 'Proporciona comodidad con la protección requerida para actividades de alto riesgo, protección a ráfagas de fuego de corta duración y arco eléctrico.',
@@ -332,7 +320,7 @@
       'index.feat3.title': 'Quality and Compliance',
       'index.feat3.desc': 'Processes oriented to deliver garments with high quality standards, timeliness, and consistency.',
       'index.feat4.title': 'Experience in Demanding Sectors',
-      'index.feat4.desc': 'We support companies that require protection against thermal and electrical risks in their operations. This perfectly captures your intention to highlight expertise, specialized design, quality, and certified materials/components.',
+      'index.feat4.desc': 'We support companies that require protection against thermal and electrical risks in their operations. Quality and certified materials/components.',
 
       /* --- INDEX — ABOUT 1 --- */
       'index.about1.title': 'WE HOLD ICONTEC QUALITY CERTIFICATIONS',
@@ -346,9 +334,9 @@
       'index.blog1.title': 'Ignisafe 10, Brand Developed by Decimo Dotaciones',
       'index.blog1.desc': 'We are a Colombian company producing specialized personal protective garments, with high quality and service standards.',
       'index.blog1.btn': 'See More',
-      'index.blog2.cat': 'Monthly Deals on Protection and Clothing',
+      'index.blog2.cat': 'Specialized protection and clothing',
       'index.blog2.title': 'OUR CATALOG',
-      'index.blog2.desc': 'Discover our products of the month. Find great discounts for your protection and clothing equipment.',
+      'index.blog2.desc': 'We provide specialized clothing designed to offer maximum protection, comfort and safety to your work team, guaranteeing a safer and more professional work environment.',
       'index.blog2.btn': 'See More',
       'index.blog3.cat': 'Reliable protection against fire and electricity',
       'index.blog3.title': 'FLAME-RESISTANT LINE',
@@ -447,7 +435,7 @@
       'cat.p2.desc': 'Resistant to short-duration fire bursts and electric arc. Made with natural fibers and high-tenacity polyamide fibers that prevent flame propagation and protect against heat exposure, providing comfort and high breathability.',
       'cat.p2.colors': '⮞ Available colors: Navy blue, royal blue, red, orange, khaki, gray.',
       'cat.p3.title': 'FLAME-RESISTANT SWEATSHIRT',
-      'cat.p3.desc': 'Resistant to short-duration fire bursts and electric arc, a multipurpose inner or outer garment, as an individual protection element against thermal risks.',
+      'cat.p3.desc': 'Made from flame-retardant knit fabric, comfortable for the wearer, ideal for administrative staff. Resistant to short bursts of fire and electric arcs, this multi-purpose undergarment or outer garment serves as personal protective equipment against thermal hazards.',
       'cat.p3.colors': '⮞ Available colors: Orange, Navy Blue, Khaki',
       'cat.p4.title': 'FLAME-RESISTANT PANTS',
       'cat.p4.desc': 'Provides comfort with the required protection for high-risk activities, protection against short-duration fire bursts and electric arc.',

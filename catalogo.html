@@ -15,19 +15,17 @@
   <style>
     .color-selector-wrapper {
       position: relative;
-      display: flex;
-      align-items: stretch;
+      display: block;
     }
     .color-buttons {
+      position: absolute;
+      left: 22px;
+      top: 50%;
+      transform: translateY(-50%);
       display: flex;
       flex-direction: column;
       gap: 15px;
-      padding-left: 22px;
-      border-radius: 6px 0 0 6px;
-      justify-content: center;
-      min-width: 46px;
       z-index: 2;
-      flex-shrink: 0;
     }
     .color-btn {
       width: 28px;
@@ -53,9 +51,8 @@
       transform: scale(1.15);
     }
     .color-selector-wrapper > img {
-      flex: 1;
-      min-width: 0;
       width: 100%;
+      display: block;
       object-fit: cover;
       transition: opacity 0.3s ease;
     }
@@ -69,8 +66,12 @@
       transform: none;
     }
     .pantalon-colors-wrap {
-      flex-shrink: 0;
+      position: absolute;
+      left: 0px;
+      top: 50%;
+      transform: translateY(-50%);
       display: flex;
+      z-index: 2;
     }
     .pantalon-type-toggle {
       position: absolute;
